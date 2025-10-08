@@ -1,0 +1,17 @@
+[
+  { "word": "学校", "reading": "がっこう", "meaning": "โรงเรียน" },
+  { "word": "先生", "reading": "せんせい", "meaning": "ครู" },
+  { "word": "友達", "reading": "ともだち", "meaning": "เพื่อน" },
+  { "word": "食べる", "reading": "たべる", "meaning": "กิน" },
+  { "word": "水", "reading": "みず", "meaning": "น้ำ" },
+  { "word": "猫", "reading": "ねこ", "meaning": "แมว" },
+  { "word": "大きい", "reading": "おおきい", "meaning": "ใหญ่" },
+  { "word": "小さい", "reading": "ちいさい", "meaning": "เล็ก" },
+  { "word": "赤い", "reading": "あかい", "meaning": "สีแดง" },
+  { "word": "青い", "reading": "あおい", "meaning": "สีน้ำเงิน" },
+  { "word": "朝", "reading": "あさ", "meaning": "เช้า" },
+  { "word": "夜", "reading": "よる", "meaning": "กลางคืน" },
+  { "word": "行く", "reading": "いく", "meaning": "ไป" },
+  { "word": "見る", "reading": "みる", "meaning": "ดู" },
+  { "word": "買う", "reading": "かう", "meaning": "ซื้อ" }
+]
