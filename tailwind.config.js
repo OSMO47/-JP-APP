@@ -8,20 +8,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        sakura: '#f0dfc8',
-        midnight: '#2f2623',
-        moss: '#5f5a4b',
-        sky: '#b14f37',
-        parchment: '#f6f0df',
-        gold: '#c3a168',
-        indigo: '#2f4858'
+        xpBlue: '#245edc',
+        xpBlueLight: '#5f8ce9',
+        xpNavy: '#1b3a73',
+        xpGreen: '#3ba146',
+        xpYellow: '#ffd863',
+        xpPanel: '#f4f7ff',
+        xpCream: '#e8f1ff',
+        xpGray: '#c6d7f5',
+        xpText: '#1e2d4a'
       },
       fontFamily: {
-        display: ['"Shippori Mincho"', 'serif'],
-        body: ['"Noto Serif Thai"', '"Shippori Mincho"', 'serif']
+        display: ['"Trebuchet MS"', '"Noto Sans JP"', '"Noto Sans Thai"', 'sans-serif'],
+        body: ['"Tahoma"', '"Noto Sans JP"', '"Noto Sans Thai"', 'sans-serif']
       },
       boxShadow: {
-        paper: '0 18px 40px rgba(47, 38, 35, 0.12)'
+        window: '0 16px 32px rgba(36, 94, 220, 0.18)',
+        toolbar: 'inset 0 1px 0 rgba(255,255,255,0.8), inset 0 -1px 0 rgba(27,58,115,0.2)'
       }
     }
   },

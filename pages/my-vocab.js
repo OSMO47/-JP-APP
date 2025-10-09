@@ -76,14 +76,14 @@ export default function MyVocabularyPage() {
   return (
     <div className="min-h-screen px-4 py-10 md:py-14">
       <div className="mx-auto flex max-w-5xl flex-col gap-8">
-        <header className="flex flex-col gap-3 rounded-[32px] border border-midnight/10 bg-white/80 px-6 py-8 shadow-paper md:flex-row md:items-center md:justify-between md:px-10">
+        <header className="flex flex-col gap-3 rounded-[32px] border border-xpBlue/40 bg-xpPanel/95 px-6 py-8 shadow-window md:flex-row md:items-center md:justify-between md:px-10">
           <div>
-            <h1 className="text-3xl font-display text-midnight">คลังคำศัพท์ของฉัน</h1>
-            <p className="text-base text-midnight/70">เก็บคำศัพท์ที่อยากท่องจำ พร้อมแบ่งระดับ JLPT ได้ตามต้องการ</p>
+            <h1 className="text-3xl font-display text-xpText">คลังคำศัพท์ของฉัน</h1>
+            <p className="text-base text-xpText/70">เก็บคำศัพท์ที่อยากท่องจำ พร้อมแบ่งระดับ JLPT ได้ตามต้องการ</p>
           </div>
           <Link
             href="/"
-            className="self-start rounded-full border border-sky/70 px-5 py-2 text-sm font-semibold text-sky transition hover:bg-sky/10"
+            className="self-start rounded-full border border-xpBlue/60 bg-white/90 px-5 py-2 text-sm font-semibold text-xpBlue shadow-sm transition hover:bg-xpCream/90"
           >
             ← กลับหน้าหลัก
           </Link>
@@ -92,49 +92,49 @@ export default function MyVocabularyPage() {
         <section className="grid gap-6 md:grid-cols-[1.3fr,1fr]">
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-4 rounded-[28px] border border-midnight/10 bg-white/80 p-6 shadow-paper"
+            className="flex flex-col gap-4 rounded-[28px] border border-xpBlue/40 bg-xpPanel/95 p-6 shadow-window"
           >
-            <h2 className="text-xl font-display text-midnight">เพิ่มคำศัพท์ใหม่</h2>
+            <h2 className="text-xl font-display text-xpText">เพิ่มคำศัพท์ใหม่</h2>
             <div>
-              <label className="block text-sm font-semibold text-midnight/70">คำศัพท์ภาษาญี่ปุ่น (漢字/かな)</label>
+              <label className="block text-sm font-semibold text-xpText/80">คำศัพท์ภาษาญี่ปุ่น (漢字/かな)</label>
               <input
                 type="text"
                 name="word"
                 value={form.word}
                 onChange={handleChange}
-                className="mt-1 w-full rounded-2xl border border-midnight/15 bg-parchment/80 px-4 py-2 text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/30"
+                className="mt-1 w-full rounded-2xl border border-xpBlue/30 bg-white/90 px-4 py-2 text-xpText shadow-sm focus:border-xpBlue focus:outline-none focus:ring-2 focus:ring-xpYellow/60"
                 placeholder="เช่น 勉強 หรือ べんきょう"
               />
             </div>
             <div>
-              <label className="block text-sm font-semibold text-midnight/70">การอ่าน (よみかた)</label>
+              <label className="block text-sm font-semibold text-xpText/80">การอ่าน (よみかた)</label>
               <input
                 type="text"
                 name="reading"
                 value={form.reading}
                 onChange={handleChange}
-                className="mt-1 w-full rounded-2xl border border-midnight/15 bg-parchment/80 px-4 py-2 text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/30"
+                className="mt-1 w-full rounded-2xl border border-xpBlue/30 bg-white/90 px-4 py-2 text-xpText shadow-sm focus:border-xpBlue focus:outline-none focus:ring-2 focus:ring-xpYellow/60"
                 placeholder="เช่น べんきょう"
               />
             </div>
             <div>
-              <label className="block text-sm font-semibold text-midnight/70">คำแปลภาษาไทย</label>
+              <label className="block text-sm font-semibold text-xpText/80">คำแปลภาษาไทย</label>
               <input
                 type="text"
                 name="meaning"
                 value={form.meaning}
                 onChange={handleChange}
-                className="mt-1 w-full rounded-2xl border border-midnight/15 bg-parchment/80 px-4 py-2 text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/30"
+                className="mt-1 w-full rounded-2xl border border-xpBlue/30 bg-white/90 px-4 py-2 text-xpText shadow-sm focus:border-xpBlue focus:outline-none focus:ring-2 focus:ring-xpYellow/60"
                 placeholder="เช่น การเรียน"
               />
             </div>
             <div>
-              <label className="block text-sm font-semibold text-midnight/70">ระดับ JLPT</label>
+              <label className="block text-sm font-semibold text-xpText/80">ระดับ JLPT</label>
               <select
                 name="level"
                 value={form.level}
                 onChange={handleChange}
-                className="mt-1 w-full rounded-2xl border border-midnight/15 bg-parchment/80 px-4 py-2 text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/30"
+                className="mt-1 w-full rounded-2xl border border-xpBlue/30 bg-white/90 px-4 py-2 text-xpText shadow-sm focus:border-xpBlue focus:outline-none focus:ring-2 focus:ring-xpYellow/60"
               >
                 {levelOptions.map((option) => (
                   <option key={option.value} value={option.value}>
@@ -146,19 +146,19 @@ export default function MyVocabularyPage() {
             {error && <p className="text-sm text-rose-600">{error}</p>}
             <button
               type="submit"
-              className="mt-2 rounded-full bg-sky px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky/80"
+              className="mt-2 rounded-full border border-xpBlue/60 bg-gradient-to-r from-xpBlue to-xpBlueLight px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:from-xpBlue/90 hover:to-xpBlueLight/90"
             >
               บันทึกคำศัพท์
             </button>
           </form>
 
           <div className="flex flex-col gap-4">
-            <div className="flex flex-wrap items-center justify-between gap-3 rounded-[28px] border border-midnight/10 bg-white/75 px-5 py-4 shadow-paper">
-              <h2 className="text-xl font-display text-midnight">คำศัพท์ทั้งหมด</h2>
+            <div className="flex flex-wrap items-center justify-between gap-3 rounded-[28px] border border-xpBlue/40 bg-xpPanel/95 px-5 py-4 shadow-window">
+              <h2 className="text-xl font-display text-xpText">คำศัพท์ทั้งหมด</h2>
               <select
                 value={filterLevel}
                 onChange={(event) => setFilterLevel(event.target.value)}
-                className="rounded-full border border-midnight/15 bg-parchment/80 px-4 py-2 text-sm text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/30"
+                className="rounded-full border border-xpBlue/30 bg-white/90 px-4 py-2 text-sm text-xpText shadow-sm focus:border-xpBlue focus:outline-none focus:ring-2 focus:ring-xpYellow/60"
               >
                 <option value="ALL">ทุกระดับ</option>
                 {levelOptions.map((option) => (
@@ -170,7 +170,7 @@ export default function MyVocabularyPage() {
             </div>
 
             {filteredVocabulary.length === 0 ? (
-              <div className="rounded-[28px] border border-dashed border-midnight/20 bg-parchment/80 p-8 text-center text-midnight/70">
+              <div className="rounded-[28px] border border-dashed border-xpBlue/40 bg-white/85 p-8 text-center text-xpText/70 shadow-sm">
                 ยังไม่มีคำศัพท์บันทึกไว้ ลองเพิ่มคำศัพท์คำแรกได้เลย!
               </div>
             ) : (
@@ -187,7 +187,7 @@ export default function MyVocabularyPage() {
                     <button
                       type="button"
                       onClick={() => handleDelete(item.id)}
-                      className="absolute right-4 top-4 rounded-full border border-rose-300 bg-white/90 px-3 py-1 text-xs font-semibold text-rose-600 shadow-sm transition hover:bg-rose-50"
+                      className="absolute right-4 top-4 rounded-full border border-rose-300 bg-white/95 px-3 py-1 text-xs font-semibold text-rose-600 shadow-sm transition hover:bg-rose-100"
                     >
                       ลบ
                     </button>

@@ -238,22 +238,11 @@ export default function QuizPage() {
       }
     }
 
-    const choices = shuffle([...shuffledDistractors, correctWord]).map((item) => {
-      const secondaryParts = [];
-      if (item.reading && item.reading !== item.word) {
-        secondaryParts.push(item.reading);
-      }
-      if (item.romaji) {
-        secondaryParts.push(item.romaji);
-      }
-
-      return {
-        id: item.id,
-        primary: item.word || item.reading || item.romaji || '—',
-        secondary: secondaryParts.join(' · '),
-        isCorrect: item.id === correctWord.id
-      };
-    });
+    const choices = shuffle([...shuffledDistractors, correctWord]).map((item) => ({
+      id: item.id,
+      primary: item.word || item.reading || item.romaji || '—',
+      isCorrect: item.id === correctWord.id
+    }));
 
     setQuestion(correctWord);
     setOptions(choices);
@@ -328,20 +317,20 @@ export default function QuizPage() {
   const selectedSetMeta = activeSet !== 'all' ? levelInfo.setMeta?.[activeSet] : null;
 
   return (
-    <div className="min-h-screen px-4 py-10 md:py-12">
-      <div className="mx-auto flex max-w-6xl flex-col gap-6">
-        <header className="flex flex-col gap-4 rounded-[32px] border border-midnight/10 bg-white/80 px-6 py-8 shadow-paper md:flex-row md:items-center md:justify-between md:px-10">
+    <div className="min-h-screen px-4 py-10 md:py-14">
+      <div className="mx-auto flex max-w-6xl flex-col gap-8">
+        <header className="flex flex-col gap-4 rounded-3xl border border-xpBlue/40 bg-xpPanel/95 px-6 py-8 shadow-window md:flex-row md:items-center md:justify-between md:px-10">
           <div>
-            <h1 className="text-3xl font-display text-midnight">โหมดสุ่มคำศัพท์</h1>
-            <p className="text-base text-midnight/70">เลือกคำตอบที่ตรงกับความหมายของคำศัพท์ญี่ปุ่น</p>
+            <h1 className="text-3xl font-display text-xpText">โหมดตอบคันจิ</h1>
+            <p className="text-base text-xpText/70">อ่านคำแปลภาษาไทย แล้วเลือกคันจิหรือคำญี่ปุ่นที่ถูกต้อง</p>
           </div>
           <div className="flex flex-wrap items-center gap-3">
-            <label className="flex items-center gap-2 rounded-full border border-midnight/15 bg-parchment/70 px-4 py-2 text-sm text-midnight/80">
-              <span className="font-semibold">ระดับ:</span>
+            <label className="flex items-center gap-2 rounded-full border border-xpBlue/40 bg-white/80 px-4 py-2 text-sm text-xpText/80 shadow-sm">
+              <span className="font-semibold text-xpText">ระดับ:</span>
               <select
                 value={level}
                 onChange={handleLevelChange}
-                className="bg-transparent text-midnight focus:outline-none"
+                className="bg-transparent text-xpText focus:outline-none"
               >
                 {levelOptions.map((option) => (
                   <option key={option.value} value={option.value}>
@@ -351,12 +340,12 @@ export default function QuizPage() {
               </select>
             </label>
             {levelInfo.sets.length > 0 && (
-              <label className="flex items-center gap-2 rounded-full border border-midnight/15 bg-parchment/70 px-4 py-2 text-sm text-midnight/80">
-                <span className="font-semibold">หมวด:</span>
+              <label className="flex items-center gap-2 rounded-full border border-xpBlue/40 bg-white/80 px-4 py-2 text-sm text-xpText/80 shadow-sm">
+                <span className="font-semibold text-xpText">หมวด:</span>
                 <select
                   value={activeSet}
                   onChange={handleSetChange}
-                  className="bg-transparent text-midnight focus:outline-none"
+                  className="bg-transparent text-xpText focus:outline-none"
                 >
                   <option value="all">ทั้งหมด ({levelInfo.words.length})</option>
                   {levelInfo.sets.map((set) => (
@@ -369,7 +358,7 @@ export default function QuizPage() {
             )}
             <Link
               href="/"
-              className="rounded-full border border-sky/70 px-5 py-2 text-sm font-semibold text-sky transition hover:bg-sky/10"
+              className="rounded-full border border-xpBlue/60 bg-white/90 px-5 py-2 text-sm font-semibold text-xpBlue transition hover:bg-xpCream/90"
             >
               ← กลับหน้าหลัก
             </Link>
@@ -378,41 +367,41 @@ export default function QuizPage() {
 
         <section className="grid gap-6 md:grid-cols-[2fr,3fr]">
           <div className="flex flex-col gap-4">
-            <div className="rounded-[28px] border border-midnight/10 bg-white/80 p-6 shadow-paper">
-              <h2 className="text-xl font-display text-midnight">สถิติของฉัน</h2>
+            <div className="rounded-3xl border border-xpBlue/30 bg-xpPanel/95 p-6 shadow-window">
+              <h2 className="text-xl font-display text-xpText">สถิติของฉัน</h2>
               <div className="mt-4 grid grid-cols-3 gap-4 text-center">
-                <div>
-                  <p className="text-sm text-midnight/70">ถูกต้อง</p>
-                  <p className="text-2xl font-bold text-midnight">{stats.correct}</p>
+                <div className="rounded-2xl bg-white/90 p-3 shadow-sm">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-xpText/60">ถูกต้อง</p>
+                  <p className="text-2xl font-bold text-xpBlue">{stats.correct}</p>
                 </div>
-                <div>
-                  <p className="text-sm text-midnight/70">ผิด</p>
-                  <p className="text-2xl font-bold text-midnight">{stats.incorrect}</p>
+                <div className="rounded-2xl bg-white/90 p-3 shadow-sm">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-xpText/60">ผิด</p>
+                  <p className="text-2xl font-bold text-rose-500">{stats.incorrect}</p>
                 </div>
-                <div>
-                  <p className="text-sm text-midnight/70">ทั้งหมด</p>
-                  <p className="text-2xl font-bold text-midnight">{stats.total}</p>
+                <div className="rounded-2xl bg-white/90 p-3 shadow-sm">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-xpText/60">ทั้งหมด</p>
+                  <p className="text-2xl font-bold text-xpText">{stats.total}</p>
                 </div>
               </div>
               {stats.total > 0 && (
-                <p className="mt-4 text-center text-sm text-midnight/70">
+                <p className="mt-4 text-center text-sm text-xpText/70">
                   คะแนนรวม: {Math.round((stats.correct / stats.total) * 100)}%
                 </p>
               )}
               {selectedSetMeta && (
-                <div className="mt-4 rounded-2xl border border-gold/30 bg-parchment/70 p-4 text-left text-xs text-midnight/80">
-                  <p className="font-semibold text-midnight">{formatSetLabel(selectedSetMeta)}</p>
+                <div className="mt-4 rounded-2xl border border-xpGray/70 bg-white/85 p-4 text-left text-xs text-xpText/80">
+                  <p className="font-semibold text-xpText">{formatSetLabel(selectedSetMeta)}</p>
                   {selectedSetMeta.comment && (
-                    <p className="mt-1 leading-relaxed text-midnight/70">{selectedSetMeta.comment}</p>
+                    <p className="mt-1 leading-relaxed">{selectedSetMeta.comment}</p>
                   )}
-                  <p className="mt-2 text-midnight/60">จำนวนคำศัพท์: {selectedSetMeta.count} คำ</p>
+                  <p className="mt-2 text-xpText/60">จำนวนคำศัพท์: {selectedSetMeta.count} คำ</p>
                 </div>
               )}
             </div>
 
-            <div className="rounded-[28px] border border-midnight/10 bg-white/80 p-6 shadow-paper">
-              <h2 className="text-xl font-display text-midnight">เคล็ดลับ</h2>
-              <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-midnight/75">
+            <div className="rounded-3xl border border-xpBlue/30 bg-xpPanel/95 p-6 shadow-window">
+              <h2 className="text-xl font-display text-xpText">เคล็ดลับ</h2>
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-xpText/80">
                 <li>ตอบแล้วอย่าลืมอ่านความหมายอีกครั้งเพื่อย้ำความจำ</li>
                 <li>สลับหมวดเพื่อฝึกคำศัพท์ให้รอบด้าน</li>
                 <li>เพิ่มคำศัพท์ใหม่ในหน้าคลังคำศัพท์ของฉันเพื่อทบทวนเพิ่มเติม</li>
@@ -455,7 +444,6 @@ export default function QuizPage() {
                     <QuizOption
                       key={option.id}
                       primary={option.primary}
-                      secondary={option.secondary}
                       selected={selectedIndex === index}
                       correct={option.isCorrect}
                       showCorrect={selectedIndex !== null}
@@ -468,15 +456,15 @@ export default function QuizPage() {
                   <button
                     type="button"
                     onClick={handleNext}
-                    className="mt-3 rounded-full border border-sky/70 bg-sky px-5 py-2 text-sm font-semibold text-white transition hover:bg-sky/90"
+                    className="mt-3 rounded-full border border-xpBlue/60 bg-gradient-to-r from-xpBlue to-xpBlueLight px-6 py-2 text-sm font-semibold text-white shadow-sm transition hover:from-xpBlue/90 hover:to-xpBlueLight/90"
                   >
                     คำถัดไป
                   </button>
                 </div>
               </>
             ) : (
-              <div className="rounded-[28px] border border-dashed border-midnight/20 bg-parchment/80 p-6 text-center text-midnight/70">
-                <p className="text-lg font-display text-midnight">ยังไม่มีคำศัพท์ในหมวดนี้</p>
+              <div className="rounded-3xl border border-dashed border-xpBlue/40 bg-white/85 p-6 text-center text-xpText/70 shadow-sm">
+                <p className="text-lg font-display text-xpText">ยังไม่มีคำศัพท์ในหมวดนี้</p>
                 <p className="mt-2 text-sm leading-relaxed">
                   ลองเลือกหมวดอื่นหรือเพิ่มคำศัพท์ใหม่ในหน้า "คำศัพท์ของฉัน" เพื่อเริ่มฝึกทบทวน
                 </p>
