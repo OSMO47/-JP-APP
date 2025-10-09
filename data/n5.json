@@ -1,0 +1,12 @@
+[
+  { "id": "n5-0001", "kanji": "学校", "kana": "がっこう", "meaning_th": "โรงเรียน", "level": "N5" },
+  { "id": "n5-0002", "kanji": "先生", "kana": "せんせい", "meaning_th": "ครู", "level": "N5" },
+  { "id": "n5-0003", "kanji": "食べる", "kana": "たべる", "meaning_th": "กิน", "level": "N5" },
+  { "id": "n5-0004", "kanji": "猫", "kana": "ねこ", "meaning_th": "แมว", "level": "N5" },
+  { "id": "n5-0005", "kanji": "水", "kana": "みず", "meaning_th": "น้ำ", "level": "N5" },
+  { "id": "n5-0006", "kanji": "空", "kana": "そら", "meaning_th": "ท้องฟ้า", "level": "N5" },
+  { "id": "n5-0007", "kanji": "雨", "kana": "あめ", "meaning_th": "ฝน", "level": "N5" },
+  { "id": "n5-0008", "kanji": "山", "kana": "やま", "meaning_th": "ภูเขา", "level": "N5" },
+  { "id": "n5-0009", "kanji": "犬", "kana": "いぬ", "meaning_th": "สุนัข", "level": "N5" },
+  { "id": "n5-0010", "kanji": "本", "kana": "ほん", "meaning_th": "หนังสือ", "level": "N5" }
+]
