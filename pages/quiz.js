@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import WordCard from '@/components/WordCard';
@@ -154,6 +154,7 @@ export default function QuizPage() {
   const [options, setOptions] = useState([]);
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [stats, setStats] = useState({ correct: 0, incorrect: 0, total: 0 });
+  const nextTimeoutRef = useRef(null);
 
   useEffect(() => {
     if (typeof queryLevel === 'string' && vocabByLevel[queryLevel]) {
@@ -195,6 +196,10 @@ export default function QuizPage() {
   );
 
   const createQuestion = useCallback(() => {
+    if (nextTimeoutRef.current) {
+      clearTimeout(nextTimeoutRef.current);
+      nextTimeoutRef.current = null;
+    }
     const levelInfo = vocabByLevel[level];
     const pool = levelInfo
       ? activeSet === 'all'
@@ -234,20 +239,18 @@ export default function QuizPage() {
     }
 
     const choices = shuffle([...shuffledDistractors, correctWord]).map((item) => {
-      const primary = item.meaning || item.english || '—';
-      let secondary = '';
-      if (item.meaning && item.english && item.meaning !== item.english) {
-        secondary = item.english;
-      } else if (item.romaji) {
-        secondary = item.romaji;
-      } else if (item.reading && item.reading !== item.word) {
-        secondary = item.reading;
+      const secondaryParts = [];
+      if (item.reading && item.reading !== item.word) {
+        secondaryParts.push(item.reading);
+      }
+      if (item.romaji) {
+        secondaryParts.push(item.romaji);
       }
 
       return {
         id: item.id,
-        primary,
-        secondary,
+        primary: item.word || item.reading || item.romaji || '—',
+        secondary: secondaryParts.join(' · '),
         isCorrect: item.id === correctWord.id
       };
     });
@@ -263,20 +266,39 @@ export default function QuizPage() {
 
   const handleSelect = (index) => {
     if (selectedIndex !== null) return;
+    const isCorrect = options[index]?.isCorrect;
     setSelectedIndex(index);
     setStats((prev) => ({
-      correct: prev.correct + (options[index]?.isCorrect ? 1 : 0),
-      incorrect: prev.incorrect + (options[index]?.isCorrect ? 0 : 1),
+      correct: prev.correct + (isCorrect ? 1 : 0),
+      incorrect: prev.incorrect + (isCorrect ? 0 : 1),
       total: prev.total + 1
     }));
+
+    if (isCorrect) {
+      if (nextTimeoutRef.current) {
+        clearTimeout(nextTimeoutRef.current);
+      }
+      nextTimeoutRef.current = setTimeout(() => {
+        nextTimeoutRef.current = null;
+        createQuestion();
+      }, 1200);
+    }
   };
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
+    if (nextTimeoutRef.current) {
+      clearTimeout(nextTimeoutRef.current);
+      nextTimeoutRef.current = null;
+    }
     createQuestion();
-  };
+  }, [createQuestion]);
 
   const handleLevelChange = (event) => {
     const value = event.target.value;
+    if (nextTimeoutRef.current) {
+      clearTimeout(nextTimeoutRef.current);
+      nextTimeoutRef.current = null;
+    }
     setLevel(value);
     setActiveSet('all');
     setStats({ correct: 0, incorrect: 0, total: 0 });
@@ -285,10 +307,22 @@ export default function QuizPage() {
 
   const handleSetChange = (event) => {
     const value = event.target.value;
+    if (nextTimeoutRef.current) {
+      clearTimeout(nextTimeoutRef.current);
+      nextTimeoutRef.current = null;
+    }
     setActiveSet(value);
     setStats({ correct: 0, incorrect: 0, total: 0 });
     updateRoute(level, value);
   };
+
+  useEffect(() => {
+    return () => {
+      if (nextTimeoutRef.current) {
+        clearTimeout(nextTimeoutRef.current);
+      }
+    };
+  }, []);
 
   const levelInfo = vocabByLevel[level] || { words: [], sets: [], setMeta: {} };
   const selectedSetMeta = activeSet !== 'all' ? levelInfo.setMeta?.[activeSet] : null;
@@ -398,12 +432,14 @@ export default function QuizPage() {
                   pos={question.pos}
                   example={selectedIndex !== null ? question.example : null}
                   level={question.level}
+                  emphasis="meaning"
+                  answerRevealed={selectedIndex !== null}
                   footer={
                     selectedIndex !== null
                       ? options[selectedIndex]?.isCorrect
-                        ? 'ตอบถูกแล้ว!'
-                        : 'ลองใหม่อีกครั้งได้เลย'
-                      : 'เลือกคำตอบด้านขวา'
+                        ? 'ตอบถูกแล้ว! กำลังไปข้อถัดไป…'
+                        : 'ตอบผิด ลองกดปุ่มคำถัดไปเพื่อเปลี่ยนข้อ'
+                      : 'ดูคำแปลภาษาไทย แล้วเลือกคำศัพท์ญี่ปุ่นที่ตรงกัน'
                   }
                   topic={
                     question.setTitle
