@@ -1,0 +1,158 @@
+[
+  {
+    "kanji": "学校",
+    "kana": "がっこう",
+    "romaji": "gakkou",
+    "thai": "โรงเรียน",
+    "english": "school",
+    "pos": "คำนาม",
+    "example": {
+      "ja": "明日学校へ行きます。",
+      "kana": "あしたがっこうへいきます。",
+      "thai": "พรุ่งนี้ไปโรงเรียน"
+    }
+  },
+  {
+    "kanji": "先生",
+    "kana": "せんせい",
+    "romaji": "sensei",
+    "thai": "ครู",
+    "english": "teacher",
+    "pos": "คำนาม",
+    "example": {
+      "ja": "先生に質問しました。",
+      "kana": "せんせいにしつもんしました。",
+      "thai": "ถามคำถามกับครู"
+    }
+  },
+  {
+    "kanji": "友達",
+    "kana": "ともだち",
+    "romaji": "tomodachi",
+    "thai": "เพื่อน",
+    "english": "friend",
+    "pos": "คำนาม",
+    "example": {
+      "ja": "友達と映画を見ます。",
+      "kana": "ともだちとえいがをみます。",
+      "thai": "ดูหนังกับเพื่อน"
+    }
+  },
+  {
+    "kanji": "食べる",
+    "kana": "たべる",
+    "romaji": "taberu",
+    "thai": "กิน",
+    "english": "to eat",
+    "pos": "กริยา",
+    "example": {
+      "ja": "朝ご飯を食べます。",
+      "kana": "あさごはんをたべます。",
+      "thai": "กินข้าวเช้า"
+    }
+  },
+  {
+    "kanji": "飲む",
+    "kana": "のむ",
+    "romaji": "nomu",
+    "thai": "ดื่ม",
+    "english": "to drink",
+    "pos": "กริยา",
+    "example": {
+      "ja": "水を飲んでください。",
+      "kana": "みずをのんでください。",
+      "thai": "กรุณาดื่มน้ำ"
+    }
+  },
+  {
+    "kanji": "新しい",
+    "kana": "あたらしい",
+    "romaji": "atarashii",
+    "thai": "ใหม่",
+    "english": "new",
+    "pos": "คุณศัพท์",
+    "example": {
+      "ja": "新しい靴を買いました。",
+      "kana": "あたらしいくつをかいました。",
+      "thai": "ซื้อรองเท้าใหม่"
+    }
+  },
+  {
+    "kanji": "古い",
+    "kana": "ふるい",
+    "romaji": "furui",
+    "thai": "เก่า",
+    "english": "old",
+    "pos": "คุณศัพท์",
+    "example": {
+      "ja": "古い本を読みました。",
+      "kana": "ふるいほんをよみました。",
+      "thai": "อ่านหนังสือเก่า"
+    }
+  },
+  {
+    "kanji": "午前",
+    "kana": "ごぜん",
+    "romaji": "gozen",
+    "thai": "ตอนเช้า",
+    "english": "morning",
+    "pos": "คำนาม",
+    "example": {
+      "ja": "午前九時に会いましょう。",
+      "kana": "ごぜんくじにあいましょう。",
+      "thai": "เจอกันตอนเก้าโมงเช้า"
+    }
+  },
+  {
+    "kanji": "毎日",
+    "kana": "まいにち",
+    "romaji": "mainichi",
+    "thai": "ทุกวัน",
+    "english": "every day",
+    "pos": "คำวิเศษณ์",
+    "example": {
+      "ja": "毎日日本語を勉強します。",
+      "kana": "まいにちにほんごをべんきょうします。",
+      "thai": "เรียนภาษาญี่ปุ่นทุกวัน"
+    }
+  },
+  {
+    "kanji": "書く",
+    "kana": "かく",
+    "romaji": "kaku",
+    "thai": "เขียน",
+    "english": "to write",
+    "pos": "กริยา",
+    "example": {
+      "ja": "手紙を書いています。",
+      "kana": "てがみをかいています。",
+      "thai": "กำลังเขียนจดหมาย"
+    }
+  },
+  {
+    "kanji": "聞く",
+    "kana": "きく",
+    "romaji": "kiku",
+    "thai": "ฟัง",
+    "english": "to listen",
+    "pos": "กริยา",
+    "example": {
+      "ja": "音楽を聞きます。",
+      "kana": "おんがくをききます。",
+      "thai": "ฟังเพลง"
+    }
+  },
+  {
+    "kanji": "静か",
+    "kana": "しずか",
+    "romaji": "shizuka",
+    "thai": "เงียบ",
+    "english": "quiet",
+    "pos": "な形容詞",
+    "example": {
+      "ja": "図書館はとても静かです。",
+      "kana": "としょかんはとてもしずかです。",
+      "thai": "ห้องสมุดเงียบมาก"
+    }
+  }
+]
