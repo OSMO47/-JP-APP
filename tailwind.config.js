@@ -8,10 +8,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        sakura: '#f9e5e9',
-        midnight: '#1f2937',
-        moss: '#4b5563',
-        sky: '#38bdf8'
+        sakura: '#f0dfc8',
+        midnight: '#2f2623',
+        moss: '#5f5a4b',
+        sky: '#b14f37',
+        parchment: '#f6f0df',
+        gold: '#c3a168',
+        indigo: '#2f4858'
+      },
+      fontFamily: {
+        display: ['"Shippori Mincho"', 'serif'],
+        body: ['"Noto Serif Thai"', '"Shippori Mincho"', 'serif']
+      },
+      boxShadow: {
+        paper: '0 18px 40px rgba(47, 38, 35, 0.12)'
       }
     }
   },

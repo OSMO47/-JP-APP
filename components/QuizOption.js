@@ -1,21 +1,21 @@
 const baseStyles =
-  'w-full rounded-xl border border-moss/20 bg-white px-5 py-3 text-left text-base font-medium transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-sky disabled:cursor-not-allowed disabled:opacity-75';
+  'w-full rounded-xl border border-midnight/10 bg-parchment/80 px-5 py-3 text-left text-base font-medium tracking-wide transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-1 focus:ring-offset-parchment disabled:cursor-not-allowed disabled:opacity-80';
 
 export default function QuizOption({ primary, secondary, selected, correct, showCorrect, disabled, onClick }) {
   const stateClass = selected
     ? correct
-      ? ' border-sky bg-sky/10 text-midnight'
-      : ' border-red-400 bg-red-100 text-red-600'
+      ? ' border-sky bg-sky/15 text-midnight'
+      : ' border-rose-400 bg-rose-100 text-rose-700'
     : showCorrect && correct
-    ? ' border-sky/80 bg-sky/10 text-midnight'
+    ? ' border-sky/70 bg-sky/10 text-midnight'
     : disabled
     ? ''
-    : ' hover:border-sky hover:bg-sky/5';
+    : ' hover:border-gold hover:bg-white/80';
 
   return (
     <button type="button" disabled={disabled} onClick={onClick} className={baseStyles + stateClass}>
-      <span className="block text-base font-semibold">{primary}</span>
-      {secondary && <span className="mt-1 block text-sm text-moss/90">{secondary}</span>}
+      <span className="block text-base font-semibold text-midnight">{primary}</span>
+      {secondary && <span className="mt-1 block text-sm text-moss/80">{secondary}</span>}
     </button>
   );
 }

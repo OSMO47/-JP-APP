@@ -74,64 +74,67 @@ export default function MyVocabularyPage() {
   };
 
   return (
-    <div className="min-h-screen bg-sakura">
-      <div className="mx-auto flex max-w-5xl flex-col gap-8 px-6 py-10">
-        <header className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+    <div className="min-h-screen px-4 py-10 md:py-14">
+      <div className="mx-auto flex max-w-5xl flex-col gap-8">
+        <header className="flex flex-col gap-3 rounded-[32px] border border-midnight/10 bg-white/80 px-6 py-8 shadow-paper md:flex-row md:items-center md:justify-between md:px-10">
           <div>
-            <h1 className="text-3xl font-semibold text-midnight">คลังคำศัพท์ของฉัน</h1>
-            <p className="text-moss">เก็บคำศัพท์ที่อยากท่องจำ พร้อมแบ่งระดับ JLPT ได้ตามต้องการ</p>
+            <h1 className="text-3xl font-display text-midnight">คลังคำศัพท์ของฉัน</h1>
+            <p className="text-base text-midnight/70">เก็บคำศัพท์ที่อยากท่องจำ พร้อมแบ่งระดับ JLPT ได้ตามต้องการ</p>
           </div>
           <Link
             href="/"
-            className="self-start rounded-full border border-sky px-4 py-2 text-sm font-medium text-sky transition hover:bg-sky/10"
+            className="self-start rounded-full border border-sky/70 px-5 py-2 text-sm font-semibold text-sky transition hover:bg-sky/10"
           >
             ← กลับหน้าหลัก
           </Link>
         </header>
 
         <section className="grid gap-6 md:grid-cols-[1.3fr,1fr]">
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4 rounded-2xl border border-moss/20 bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-semibold text-midnight">เพิ่มคำศัพท์ใหม่</h2>
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-4 rounded-[28px] border border-midnight/10 bg-white/80 p-6 shadow-paper"
+          >
+            <h2 className="text-xl font-display text-midnight">เพิ่มคำศัพท์ใหม่</h2>
             <div>
-              <label className="block text-sm font-medium text-moss">คำศัพท์ภาษาญี่ปุ่น (漢字/かな)</label>
+              <label className="block text-sm font-semibold text-midnight/70">คำศัพท์ภาษาญี่ปุ่น (漢字/かな)</label>
               <input
                 type="text"
                 name="word"
                 value={form.word}
                 onChange={handleChange}
-                className="mt-1 w-full rounded-xl border border-moss/30 bg-white px-4 py-2 text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/40"
+                className="mt-1 w-full rounded-2xl border border-midnight/15 bg-parchment/80 px-4 py-2 text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/30"
                 placeholder="เช่น 勉強 หรือ べんきょう"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-moss">การอ่าน (よみかた)</label>
+              <label className="block text-sm font-semibold text-midnight/70">การอ่าน (よみかた)</label>
               <input
                 type="text"
                 name="reading"
                 value={form.reading}
                 onChange={handleChange}
-                className="mt-1 w-full rounded-xl border border-moss/30 bg-white px-4 py-2 text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/40"
+                className="mt-1 w-full rounded-2xl border border-midnight/15 bg-parchment/80 px-4 py-2 text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/30"
                 placeholder="เช่น べんきょう"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-moss">คำแปลภาษาไทย</label>
+              <label className="block text-sm font-semibold text-midnight/70">คำแปลภาษาไทย</label>
               <input
                 type="text"
                 name="meaning"
                 value={form.meaning}
                 onChange={handleChange}
-                className="mt-1 w-full rounded-xl border border-moss/30 bg-white px-4 py-2 text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/40"
+                className="mt-1 w-full rounded-2xl border border-midnight/15 bg-parchment/80 px-4 py-2 text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/30"
                 placeholder="เช่น การเรียน"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-moss">ระดับ JLPT</label>
+              <label className="block text-sm font-semibold text-midnight/70">ระดับ JLPT</label>
               <select
                 name="level"
                 value={form.level}
                 onChange={handleChange}
-                className="mt-1 w-full rounded-xl border border-moss/30 bg-white px-4 py-2 text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/40"
+                className="mt-1 w-full rounded-2xl border border-midnight/15 bg-parchment/80 px-4 py-2 text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/30"
               >
                 {levelOptions.map((option) => (
                   <option key={option.value} value={option.value}>
@@ -140,22 +143,22 @@ export default function MyVocabularyPage() {
                 ))}
               </select>
             </div>
-            {error && <p className="text-sm text-red-600">{error}</p>}
+            {error && <p className="text-sm text-rose-600">{error}</p>}
             <button
               type="submit"
-              className="mt-2 rounded-2xl bg-sky px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky/80"
+              className="mt-2 rounded-full bg-sky px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky/80"
             >
               บันทึกคำศัพท์
             </button>
           </form>
 
           <div className="flex flex-col gap-4">
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <h2 className="text-xl font-semibold text-midnight">คำศัพท์ทั้งหมด</h2>
+            <div className="flex flex-wrap items-center justify-between gap-3 rounded-[28px] border border-midnight/10 bg-white/75 px-5 py-4 shadow-paper">
+              <h2 className="text-xl font-display text-midnight">คำศัพท์ทั้งหมด</h2>
               <select
                 value={filterLevel}
                 onChange={(event) => setFilterLevel(event.target.value)}
-                className="rounded-full border border-moss/30 bg-white px-4 py-2 text-sm text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/40"
+                className="rounded-full border border-midnight/15 bg-parchment/80 px-4 py-2 text-sm text-midnight focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/30"
               >
                 <option value="ALL">ทุกระดับ</option>
                 {levelOptions.map((option) => (
@@ -167,7 +170,7 @@ export default function MyVocabularyPage() {
             </div>
 
             {filteredVocabulary.length === 0 ? (
-              <div className="rounded-2xl border border-dashed border-moss/30 bg-white/70 p-8 text-center text-moss">
+              <div className="rounded-[28px] border border-dashed border-midnight/20 bg-parchment/80 p-8 text-center text-midnight/70">
                 ยังไม่มีคำศัพท์บันทึกไว้ ลองเพิ่มคำศัพท์คำแรกได้เลย!
               </div>
             ) : (
@@ -184,7 +187,7 @@ export default function MyVocabularyPage() {
                     <button
                       type="button"
                       onClick={() => handleDelete(item.id)}
-                      className="absolute right-4 top-4 rounded-full border border-red-300 bg-white px-3 py-1 text-xs font-semibold text-red-500 shadow-sm transition hover:bg-red-50"
+                      className="absolute right-4 top-4 rounded-full border border-rose-300 bg-white/90 px-3 py-1 text-xs font-semibold text-rose-600 shadow-sm transition hover:bg-rose-50"
                     >
                       ลบ
                     </button>

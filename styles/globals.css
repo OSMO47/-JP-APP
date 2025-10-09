@@ -2,12 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700&family=Noto+Serif+Thai:wght@300;400;500;600&display=swap');
+
 body {
-  @apply bg-sakura text-midnight font-sans;
+  @apply bg-parchment text-midnight font-body;
+  background-image: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.6), transparent 55%),
+    radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.4), transparent 45%),
+    linear-gradient(135deg, rgba(227, 207, 173, 0.35), rgba(230, 210, 176, 0.15));
+  background-attachment: fixed;
 }
 
 :root {
   color-scheme: light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-display text-midnight;
+  letter-spacing: 0.08em;
 }
 
 a {
