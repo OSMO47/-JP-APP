@@ -73,12 +73,70 @@
 
 ## การดีพลอย
 
-รันคำสั่ง build และ start สำหรับสภาพแวดล้อม production
+### ตัวเลือกที่ 1: Vercel (แนะนำสำหรับ Next.js)
 
-```bash
-npm run build
-npm run start
-```
+1. สร้างบัญชีหรือเข้าสู่ระบบที่ [https://vercel.com](https://vercel.com).
+2. คลิก **New Project** แล้วเชื่อมต่อกับ Git provider (GitHub/GitLab/Bitbucket) ที่เก็บซอร์สโค้ดนี้ไว้
+   - หากยังไม่ได้ push โปรเจกต์ ให้สร้าง repository ใหม่และ push ด้วยคำสั่ง `git remote add origin ...` และ `git push -u origin main` ก่อน
+3. เลือก repository ที่ต้องการดีพลอย แล้วตรวจสอบค่าเริ่มต้น
+   - **Framework Preset:** ควรถูกตั้งเป็น Next.js อัตโนมัติ
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `.next`
+4. กด **Deploy** และรอให้ build เสร็จ ระบบจะให้โดเมนพร้อมใช้งาน เช่น `https://your-project.vercel.app`
+5. ทุกครั้งที่ push ไปยัง branch `main` (หรือ branch ที่ตั้งค่าไว้) Vercel จะ build & deploy ให้โดยอัตโนมัติ
+
+> หากต้องการตั้งค่าตัวแปรสภาพแวดล้อม (Environment Variables) ให้ไปที่ **Settings → Environment Variables** ของโปรเจกต์ใน Vercel แล้วเพิ่ม key/value ตามต้องการก่อนกด Redeploy
+
+### ตัวเลือกที่ 2: รันบนเซิร์ฟเวอร์ Node.js ของคุณเอง
+
+1. ติดตั้ง dependencies และ build โปรเจกต์บนเครื่องเซิร์ฟเวอร์
+
+   ```bash
+   npm install
+   npm run build
+   ```
+
+2. เริ่มเซิร์ฟเวอร์ production ด้วยคำสั่ง
+
+   ```bash
+   npm run start
+   ```
+
+3. ตั้งค่า process manager เช่น **PM2**, **forever**, หรือ systemd เพื่อให้แอปทำงานตลอดเวลา ตัวอย่าง PM2:
+
+   ```bash
+   npm install -g pm2
+   pm2 start npm --name jlpt-app -- run start
+   pm2 save
+   ```
+
+4. ตั้งค่า reverse proxy (เช่น Nginx หรือ Caddy) เพื่อชี้โดเมนของคุณไปยังพอร์ตที่แอปรันอยู่ (ค่าเริ่มต้นคือ `3000`).
+
+5. เปิดใช้งาน HTTPS ด้วย Let's Encrypt หรือบริการ SSL ที่คุณใช้งานอยู่เพื่อความปลอดภัย
+
+### ตัวเลือกที่ 3: Docker (ทางเลือกเพิ่มเติม)
+
+1. สร้างไฟล์ `Dockerfile` เช่นตัวอย่างด้านล่าง:
+
+   ```dockerfile
+   FROM node:18-alpine
+   WORKDIR /app
+   COPY package*.json ./
+   RUN npm install --production
+   COPY . .
+   RUN npm run build
+   EXPOSE 3000
+   CMD ["npm", "run", "start"]
+   ```
+
+2. สร้างอิมเมจและรันคอนเทนเนอร์
+
+   ```bash
+   docker build -t jlpt-app .
+   docker run -d -p 3000:3000 --name jlpt jlpt-app
+   ```
+
+3. ตั้งค่า reverse proxy/SSL เช่นเดียวกับตัวเลือก Node.js ปกติ
 
 ## หลังจากใช้งานหรือพัฒนาเสร็จควรทำอะไรต่อ?
 
