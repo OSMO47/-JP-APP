@@ -7,7 +7,9 @@ export default function WordCard({
   pos,
   example,
   level,
-  footer
+  footer,
+  topic,
+  topicNote
 }) {
   return (
     <div className="w-full rounded-2xl border border-moss/20 bg-white p-6 shadow-sm">
@@ -25,6 +27,12 @@ export default function WordCard({
       {pos && <div className="mt-3 inline-flex rounded-full bg-sky/10 px-3 py-1 text-xs font-semibold text-sky">{pos}</div>}
       {meaning && <div className="mt-4 text-base text-midnight/80">{meaning}</div>}
       {subMeaning && <div className="mt-1 text-sm text-moss/90">{subMeaning}</div>}
+      {topic && (
+        <div className="mt-4 space-y-1 rounded-xl bg-moss/5 p-4 text-xs leading-relaxed text-moss/90">
+          <p className="font-semibold text-moss">หมวดคำศัพท์: {topic}</p>
+          {topicNote && <p className="text-moss/80">{topicNote}</p>}
+        </div>
+      )}
       {example && (example.ja || example.kana || example.thai) && (
         <div className="mt-4 space-y-1 rounded-xl bg-sakura/40 p-4 text-sm text-midnight/80">
           {example.ja && <p className="font-medium text-midnight">{example.ja}</p>}

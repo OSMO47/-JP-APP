@@ -1,158 +1,2622 @@
 [
   {
-    "kanji": "学校",
-    "kana": "がっこう",
-    "romaji": "gakkou",
-    "thai": "โรงเรียน",
-    "english": "school",
-    "pos": "คำนาม",
-    "example": {
-      "ja": "明日学校へ行きます。",
-      "kana": "あしたがっこうへいきます。",
-      "thai": "พรุ่งนี้ไปโรงเรียน"
-    }
+    "set": 1,
+    "title": "พื้นฐานทั่วไป",
+    "_comment": "คำศัพท์ทั่วไปที่ใช้ในชีวิตประจำวัน",
+    "words": [
+      {
+        "word": "学校",
+        "reading": "がっこう",
+        "meaning": "โรงเรียน"
+      },
+      {
+        "word": "先生",
+        "reading": "せんせい",
+        "meaning": "ครู"
+      },
+      {
+        "word": "学生",
+        "reading": "がくせい",
+        "meaning": "นักเรียน, นักศึกษา"
+      },
+      {
+        "word": "友達",
+        "reading": "ともだち",
+        "meaning": "เพื่อน"
+      },
+      {
+        "word": "人",
+        "reading": "ひと",
+        "meaning": "คน"
+      },
+      {
+        "word": "日本",
+        "reading": "にほん",
+        "meaning": "ประเทศญี่ปุ่น"
+      },
+      {
+        "word": "名前",
+        "reading": "なまえ",
+        "meaning": "ชื่อ"
+      },
+      {
+        "word": "先生",
+        "reading": "せんせい",
+        "meaning": "คุณครู"
+      },
+      {
+        "word": "何",
+        "reading": "なに",
+        "meaning": "อะไร"
+      },
+      {
+        "word": "本",
+        "reading": "ほん",
+        "meaning": "หนังสือ"
+      },
+      {
+        "word": "机",
+        "reading": "つくえ",
+        "meaning": "โต๊ะ"
+      },
+      {
+        "word": "椅子",
+        "reading": "いす",
+        "meaning": "เก้าอี้"
+      },
+      {
+        "word": "部屋",
+        "reading": "へや",
+        "meaning": "ห้อง"
+      },
+      {
+        "word": "家",
+        "reading": "いえ",
+        "meaning": "บ้าน"
+      },
+      {
+        "word": "猫",
+        "reading": "ねこ",
+        "meaning": "แมว"
+      },
+      {
+        "word": "犬",
+        "reading": "いぬ",
+        "meaning": "สุนัข"
+      },
+      {
+        "word": "水",
+        "reading": "みず",
+        "meaning": "น้ำ"
+      },
+      {
+        "word": "ご飯",
+        "reading": "ごはん",
+        "meaning": "ข้าว, อาหาร"
+      },
+      {
+        "word": "食べる",
+        "reading": "たべる",
+        "meaning": "กิน"
+      },
+      {
+        "word": "飲む",
+        "reading": "のむ",
+        "meaning": "ดื่ม"
+      },
+      {
+        "word": "見る",
+        "reading": "みる",
+        "meaning": "ดู"
+      },
+      {
+        "word": "聞く",
+        "reading": "きく",
+        "meaning": "ฟัง, ถาม"
+      },
+      {
+        "word": "話す",
+        "reading": "はなす",
+        "meaning": "พูด"
+      },
+      {
+        "word": "行く",
+        "reading": "いく",
+        "meaning": "ไป"
+      },
+      {
+        "word": "来る",
+        "reading": "くる",
+        "meaning": "มา"
+      },
+      {
+        "word": "帰る",
+        "reading": "かえる",
+        "meaning": "กลับ"
+      },
+      {
+        "word": "買う",
+        "reading": "かう",
+        "meaning": "ซื้อ"
+      },
+      {
+        "word": "書く",
+        "reading": "かく",
+        "meaning": "เขียน"
+      },
+      {
+        "word": "読む",
+        "reading": "よむ",
+        "meaning": "อ่าน"
+      },
+      {
+        "word": "立つ",
+        "reading": "たつ",
+        "meaning": "ยืน"
+      },
+      {
+        "word": "座る",
+        "reading": "すわる",
+        "meaning": "นั่ง"
+      },
+      {
+        "word": "寝る",
+        "reading": "ねる",
+        "meaning": "นอน"
+      },
+      {
+        "word": "起きる",
+        "reading": "おきる",
+        "meaning": "ตื่น"
+      },
+      {
+        "word": "見る",
+        "reading": "みる",
+        "meaning": "มอง, ดู"
+      },
+      {
+        "word": "歩く",
+        "reading": "あるく",
+        "meaning": "เดิน"
+      },
+      {
+        "word": "走る",
+        "reading": "はしる",
+        "meaning": "วิ่ง"
+      },
+      {
+        "word": "開ける",
+        "reading": "あける",
+        "meaning": "เปิด (สิ่งของ)"
+      },
+      {
+        "word": "閉める",
+        "reading": "しめる",
+        "meaning": "ปิด (สิ่งของ)"
+      },
+      {
+        "word": "使う",
+        "reading": "つかう",
+        "meaning": "ใช้"
+      },
+      {
+        "word": "作る",
+        "reading": "つくる",
+        "meaning": "ทำ, สร้าง"
+      },
+      {
+        "word": "分かる",
+        "reading": "わかる",
+        "meaning": "เข้าใจ, รู้"
+      },
+      {
+        "word": "好き",
+        "reading": "すき",
+        "meaning": "ชอบ"
+      },
+      {
+        "word": "嫌い",
+        "reading": "きらい",
+        "meaning": "ไม่ชอบ"
+      },
+      {
+        "word": "大きい",
+        "reading": "おおきい",
+        "meaning": "ใหญ่"
+      },
+      {
+        "word": "小さい",
+        "reading": "ちいさい",
+        "meaning": "เล็ก"
+      },
+      {
+        "word": "新しい",
+        "reading": "あたらしい",
+        "meaning": "ใหม่"
+      },
+      {
+        "word": "古い",
+        "reading": "ふるい",
+        "meaning": "เก่า"
+      },
+      {
+        "word": "高い",
+        "reading": "たかい",
+        "meaning": "สูง, แพง"
+      },
+      {
+        "word": "安い",
+        "reading": "やすい",
+        "meaning": "ถูก"
+      },
+      {
+        "word": "白い",
+        "reading": "しろい",
+        "meaning": "สีขาว"
+      },
+      {
+        "word": "黒い",
+        "reading": "くろい",
+        "meaning": "สีดำ"
+      }
+    ]
   },
   {
-    "kanji": "先生",
-    "kana": "せんせい",
-    "romaji": "sensei",
-    "thai": "ครู",
-    "english": "teacher",
-    "pos": "คำนาม",
-    "example": {
-      "ja": "先生に質問しました。",
-      "kana": "せんせいにしつもんしました。",
-      "thai": "ถามคำถามกับครู"
-    }
+    "set": 2,
+    "title": "ชีวิตประจำวัน",
+    "_comment": "คำศัพท์ที่เกี่ยวข้องกับกิจวัตรประจำวัน",
+    "words": [
+      {
+        "word": "電話",
+        "reading": "でんわ",
+        "meaning": "โทรศัพท์"
+      },
+      {
+        "word": "車",
+        "reading": "くるま",
+        "meaning": "รถยนต์"
+      },
+      {
+        "word": "電車",
+        "reading": "でんしゃ",
+        "meaning": "รถไฟ"
+      },
+      {
+        "word": "駅",
+        "reading": "えき",
+        "meaning": "สถานีรถไฟ"
+      },
+      {
+        "word": "店",
+        "reading": "みせ",
+        "meaning": "ร้านค้า"
+      },
+      {
+        "word": "銀行",
+        "reading": "ぎんこう",
+        "meaning": "ธนาคาร"
+      },
+      {
+        "word": "病院",
+        "reading": "びょういん",
+        "meaning": "โรงพยาบาล"
+      },
+      {
+        "word": "図書館",
+        "reading": "としょかん",
+        "meaning": "ห้องสมุด"
+      },
+      {
+        "word": "公園",
+        "reading": "こうえん",
+        "meaning": "สวนสาธารณะ"
+      },
+      {
+        "word": "道",
+        "reading": "みち",
+        "meaning": "ถนน, ทาง"
+      },
+      {
+        "word": "空港",
+        "reading": "くうこう",
+        "meaning": "สนามบิน"
+      },
+      {
+        "word": "町",
+        "reading": "まち",
+        "meaning": "เมือง, เขต"
+      },
+      {
+        "word": "店員",
+        "reading": "てんいん",
+        "meaning": "พนักงานร้าน"
+      },
+      {
+        "word": "会社",
+        "reading": "かいしゃ",
+        "meaning": "บริษัท"
+      },
+      {
+        "word": "仕事",
+        "reading": "しごと",
+        "meaning": "งาน"
+      },
+      {
+        "word": "勉強する",
+        "reading": "べんきょうする",
+        "meaning": "เรียน, ศึกษา"
+      },
+      {
+        "word": "働く",
+        "reading": "はたらく",
+        "meaning": "ทำงาน"
+      },
+      {
+        "word": "休む",
+        "reading": "やすむ",
+        "meaning": "พักผ่อน, หยุด"
+      },
+      {
+        "word": "遊ぶ",
+        "reading": "あそぶ",
+        "meaning": "เล่น"
+      },
+      {
+        "word": "泳ぐ",
+        "reading": "およぐ",
+        "meaning": "ว่ายน้ำ"
+      },
+      {
+        "word": "歌う",
+        "reading": "うたう",
+        "meaning": "ร้องเพลง"
+      },
+      {
+        "word": "使う",
+        "reading": "つかう",
+        "meaning": "ใช้"
+      },
+      {
+        "word": "持つ",
+        "reading": "もつ",
+        "meaning": "ถือ, มี"
+      },
+      {
+        "word": "開く",
+        "reading": "あく",
+        "meaning": "เปิด (อัตโนมัติ)"
+      },
+      {
+        "word": "閉まる",
+        "reading": "しまる",
+        "meaning": "ปิด (อัตโนมัติ)"
+      },
+      {
+        "word": "入る",
+        "reading": "はいる",
+        "meaning": "เข้า"
+      },
+      {
+        "word": "出る",
+        "reading": "でる",
+        "meaning": "ออก"
+      },
+      {
+        "word": "乗る",
+        "reading": "のる",
+        "meaning": "ขึ้น (ยานพาหนะ)"
+      },
+      {
+        "word": "降りる",
+        "reading": "おりる",
+        "meaning": "ลง (ยานพาหนะ)"
+      },
+      {
+        "word": "洗う",
+        "reading": "あらう",
+        "meaning": "ล้าง"
+      },
+      {
+        "word": "切る",
+        "reading": "きる",
+        "meaning": "ตัด"
+      },
+      {
+        "word": "送る",
+        "reading": "おくる",
+        "meaning": "ส่ง"
+      },
+      {
+        "word": "教える",
+        "reading": "おしえる",
+        "meaning": "สอน, บอก"
+      },
+      {
+        "word": "習う",
+        "reading": "ならう",
+        "meaning": "เรียนรู้ (จากคนอื่น)"
+      },
+      {
+        "word": "貸す",
+        "reading": "かす",
+        "meaning": "ให้ยืม"
+      },
+      {
+        "word": "借りる",
+        "reading": "かりる",
+        "meaning": "ยืม"
+      },
+      {
+        "word": "立派",
+        "reading": "りっぱ",
+        "meaning": "ยอดเยี่ยม, น่านับถือ"
+      },
+      {
+        "word": "元気",
+        "reading": "げんき",
+        "meaning": "แข็งแรง, สดใส"
+      },
+      {
+        "word": "便利",
+        "reading": "べんり",
+        "meaning": "สะดวก"
+      },
+      {
+        "word": "有名",
+        "reading": "ゆうめい",
+        "meaning": "มีชื่อเสียง"
+      },
+      {
+        "word": "大変",
+        "reading": "たいへん",
+        "meaning": "ลำบาก, ยากมาก"
+      },
+      {
+        "word": "静か",
+        "reading": "しずか",
+        "meaning": "เงียบ"
+      },
+      {
+        "word": "好き",
+        "reading": "すき",
+        "meaning": "ชอบ"
+      },
+      {
+        "word": "嫌い",
+        "reading": "きらい",
+        "meaning": "ไม่ชอบ"
+      },
+      {
+        "word": "上手",
+        "reading": "じょうず",
+        "meaning": "เก่ง"
+      },
+      {
+        "word": "下手",
+        "reading": "へた",
+        "meaning": "ไม่เก่ง"
+      },
+      {
+        "word": "きれい",
+        "reading": "きれい",
+        "meaning": "สวย, สะอาด"
+      },
+      {
+        "word": "有る",
+        "reading": "ある",
+        "meaning": "มี (สิ่งไม่มีชีวิต)"
+      },
+      {
+        "word": "居る",
+        "reading": "いる",
+        "meaning": "มี, อยู่ (สิ่งมีชีวิต)"
+      },
+      {
+        "word": "分かる",
+        "reading": "わかる",
+        "meaning": "เข้าใจ"
+      },
+      {
+        "word": "考える",
+        "reading": "かんがえる",
+        "meaning": "คิด"
+      }
+    ]
   },
   {
-    "kanji": "友達",
-    "kana": "ともだち",
-    "romaji": "tomodachi",
-    "thai": "เพื่อน",
-    "english": "friend",
-    "pos": "คำนาม",
-    "example": {
-      "ja": "友達と映画を見ます。",
-      "kana": "ともだちとえいがをみます。",
-      "thai": "ดูหนังกับเพื่อน"
-    }
+    "set": 3,
+    "title": "ธรรมชาติและสิ่งแวดล้อม",
+    "_comment": "คำศัพท์ที่เกี่ยวข้องกับธรรมชาติและสิ่งแวดล้อม",
+    "words": [
+      {
+        "word": "空",
+        "reading": "そら",
+        "meaning": "ท้องฟ้า"
+      },
+      {
+        "word": "山",
+        "reading": "やま",
+        "meaning": "ภูเขา"
+      },
+      {
+        "word": "川",
+        "reading": "かわ",
+        "meaning": "แม่น้ำ"
+      },
+      {
+        "word": "海",
+        "reading": "うみ",
+        "meaning": "ทะเล"
+      },
+      {
+        "word": "森",
+        "reading": "もり",
+        "meaning": "ป่า"
+      },
+      {
+        "word": "花",
+        "reading": "はな",
+        "meaning": "ดอกไม้"
+      },
+      {
+        "word": "木",
+        "reading": "き",
+        "meaning": "ต้นไม้"
+      },
+      {
+        "word": "雨",
+        "reading": "あめ",
+        "meaning": "ฝน"
+      },
+      {
+        "word": "雪",
+        "reading": "ゆき",
+        "meaning": "หิมะ"
+      },
+      {
+        "word": "風",
+        "reading": "かぜ",
+        "meaning": "ลม"
+      },
+      {
+        "word": "太陽",
+        "reading": "たいよう",
+        "meaning": "พระอาทิตย์"
+      },
+      {
+        "word": "月",
+        "reading": "つき",
+        "meaning": "พระจันทร์, เดือน"
+      },
+      {
+        "word": "星",
+        "reading": "ほし",
+        "meaning": "ดาว"
+      },
+      {
+        "word": "天気",
+        "reading": "てんき",
+        "meaning": "อากาศ"
+      },
+      {
+        "word": "空気",
+        "reading": "くうき",
+        "meaning": "อากาศ (สภาพแวดล้อม)"
+      },
+      {
+        "word": "体",
+        "reading": "からだ",
+        "meaning": "ร่างกาย"
+      },
+      {
+        "word": "頭",
+        "reading": "あたま",
+        "meaning": "หัว"
+      },
+      {
+        "word": "顔",
+        "reading": "かお",
+        "meaning": "ใบหน้า"
+      },
+      {
+        "word": "目",
+        "reading": "め",
+        "meaning": "ตา"
+      },
+      {
+        "word": "耳",
+        "reading": "みみ",
+        "meaning": "หู"
+      },
+      {
+        "word": "口",
+        "reading": "くち",
+        "meaning": "ปาก"
+      },
+      {
+        "word": "鼻",
+        "reading": "はな",
+        "meaning": "จมูก"
+      },
+      {
+        "word": "手",
+        "reading": "て",
+        "meaning": "มือ"
+      },
+      {
+        "word": "足",
+        "reading": "あし",
+        "meaning": "ขา, เท้า"
+      },
+      {
+        "word": "指",
+        "reading": "ゆび",
+        "meaning": "นิ้ว"
+      },
+      {
+        "word": "心",
+        "reading": "こころ",
+        "meaning": "หัวใจ, จิตใจ"
+      },
+      {
+        "word": "色",
+        "reading": "いろ",
+        "meaning": "สี"
+      },
+      {
+        "word": "赤",
+        "reading": "あか",
+        "meaning": "สีแดง"
+      },
+      {
+        "word": "青",
+        "reading": "あお",
+        "meaning": "สีน้ำเงิน"
+      },
+      {
+        "word": "白",
+        "reading": "しろ",
+        "meaning": "สีขาว"
+      },
+      {
+        "word": "黒",
+        "reading": "くろ",
+        "meaning": "สีดำ"
+      },
+      {
+        "word": "黄色",
+        "reading": "きいろ",
+        "meaning": "สีเหลือง"
+      },
+      {
+        "word": "茶色",
+        "reading": "ちゃいろ",
+        "meaning": "สีน้ำตาล"
+      },
+      {
+        "word": "緑",
+        "reading": "みどり",
+        "meaning": "สีเขียว"
+      },
+      {
+        "word": "光",
+        "reading": "ひかり",
+        "meaning": "แสง"
+      },
+      {
+        "word": "音",
+        "reading": "おと",
+        "meaning": "เสียง"
+      },
+      {
+        "word": "紙",
+        "reading": "かみ",
+        "meaning": "กระดาษ"
+      },
+      {
+        "word": "傘",
+        "reading": "かさ",
+        "meaning": "ร่ม"
+      },
+      {
+        "word": "靴",
+        "reading": "くつ",
+        "meaning": "รองเท้า"
+      },
+      {
+        "word": "服",
+        "reading": "ふく",
+        "meaning": "เสื้อผ้า"
+      },
+      {
+        "word": "帽子",
+        "reading": "ぼうし",
+        "meaning": "หมวก"
+      },
+      {
+        "word": "眼鏡",
+        "reading": "めがね",
+        "meaning": "แว่นตา"
+      },
+      {
+        "word": "鞄",
+        "reading": "かばん",
+        "meaning": "กระเป๋า"
+      },
+      {
+        "word": "時計",
+        "reading": "とけい",
+        "meaning": "นาฬิกา"
+      },
+      {
+        "word": "鍵",
+        "reading": "かぎ",
+        "meaning": "กุญแจ"
+      },
+      {
+        "word": "窓",
+        "reading": "まど",
+        "meaning": "หน้าต่าง"
+      },
+      {
+        "word": "ドア",
+        "reading": "どあ",
+        "meaning": "ประตู"
+      },
+      {
+        "word": "椅子",
+        "reading": "いす",
+        "meaning": "เก้าอี้"
+      },
+      {
+        "word": "机",
+        "reading": "つくえ",
+        "meaning": "โต๊ะ"
+      },
+      {
+        "word": "部屋",
+        "reading": "へや",
+        "meaning": "ห้อง"
+      },
+      {
+        "word": "家族",
+        "reading": "かぞく",
+        "meaning": "ครอบครัว"
+      }
+    ]
   },
   {
-    "kanji": "食べる",
-    "kana": "たべる",
-    "romaji": "taberu",
-    "thai": "กิน",
-    "english": "to eat",
-    "pos": "กริยา",
-    "example": {
-      "ja": "朝ご飯を食べます。",
-      "kana": "あさごはんをたべます。",
-      "thai": "กินข้าวเช้า"
-    }
+    "set": 4,
+    "title": "ลักษณะ, ความรู้สึก, สภาพอากาศ, และคำอธิบายทั่วไป",
+    "_comment": "คำอธิบายทั่วไป",
+    "words": [
+      {
+        "word": "暑い",
+        "reading": "あつい",
+        "meaning": "ร้อน (อากาศ)"
+      },
+      {
+        "word": "寒い",
+        "reading": "さむい",
+        "meaning": "หนาว (อากาศ)"
+      },
+      {
+        "word": "熱い",
+        "reading": "あつい",
+        "meaning": "ร้อน (สิ่งของ)"
+      },
+      {
+        "word": "冷たい",
+        "reading": "つめたい",
+        "meaning": "เย็น (สิ่งของ)"
+      },
+      {
+        "word": "暖かい",
+        "reading": "あたたかい",
+        "meaning": "อบอุ่น"
+      },
+      {
+        "word": "涼しい",
+        "reading": "すずしい",
+        "meaning": "เย็นสบาย"
+      },
+      {
+        "word": "新しい",
+        "reading": "あたらしい",
+        "meaning": "ใหม่"
+      },
+      {
+        "word": "古い",
+        "reading": "ふるい",
+        "meaning": "เก่า"
+      },
+      {
+        "word": "大きい",
+        "reading": "おおきい",
+        "meaning": "ใหญ่"
+      },
+      {
+        "word": "小さい",
+        "reading": "ちいさい",
+        "meaning": "เล็ก"
+      },
+      {
+        "word": "高い",
+        "reading": "たかい",
+        "meaning": "สูง, แพง"
+      },
+      {
+        "word": "低い",
+        "reading": "ひくい",
+        "meaning": "ต่ำ"
+      },
+      {
+        "word": "安い",
+        "reading": "やすい",
+        "meaning": "ถูก (ราคา)"
+      },
+      {
+        "word": "早い",
+        "reading": "はやい",
+        "meaning": "เร็ว (เวลา)"
+      },
+      {
+        "word": "速い",
+        "reading": "はやい",
+        "meaning": "เร็ว (ความเร็ว)"
+      },
+      {
+        "word": "遅い",
+        "reading": "おそい",
+        "meaning": "ช้า"
+      },
+      {
+        "word": "明るい",
+        "reading": "あかるい",
+        "meaning": "สว่าง"
+      },
+      {
+        "word": "暗い",
+        "reading": "くらい",
+        "meaning": "มืด"
+      },
+      {
+        "word": "面白い",
+        "reading": "おもしろい",
+        "meaning": "น่าสนใจ, สนุก"
+      },
+      {
+        "word": "つまらない",
+        "reading": "つまらない",
+        "meaning": "น่าเบื่อ"
+      },
+      {
+        "word": "楽しい",
+        "reading": "たのしい",
+        "meaning": "สนุก"
+      },
+      {
+        "word": "嬉しい",
+        "reading": "うれしい",
+        "meaning": "ดีใจ"
+      },
+      {
+        "word": "悲しい",
+        "reading": "かなしい",
+        "meaning": "เศร้า"
+      },
+      {
+        "word": "怖い",
+        "reading": "こわい",
+        "meaning": "น่ากลัว"
+      },
+      {
+        "word": "忙しい",
+        "reading": "いそがしい",
+        "meaning": "ยุ่ง"
+      },
+      {
+        "word": "静か",
+        "reading": "しずか",
+        "meaning": "เงียบ"
+      },
+      {
+        "word": "賑やか",
+        "reading": "にぎやか",
+        "meaning": "คึกคัก, มีชีวิตชีวา"
+      },
+      {
+        "word": "便利",
+        "reading": "べんり",
+        "meaning": "สะดวก"
+      },
+      {
+        "word": "不便",
+        "reading": "ふべん",
+        "meaning": "ไม่สะดวก"
+      },
+      {
+        "word": "有名",
+        "reading": "ゆうめい",
+        "meaning": "มีชื่อเสียง"
+      },
+      {
+        "word": "元気",
+        "reading": "げんき",
+        "meaning": "แข็งแรง, สดใส"
+      },
+      {
+        "word": "親切",
+        "reading": "しんせつ",
+        "meaning": "ใจดี"
+      },
+      {
+        "word": "きれい",
+        "reading": "きれい",
+        "meaning": "สวย, สะอาด"
+      },
+      {
+        "word": "上手",
+        "reading": "じょうず",
+        "meaning": "เก่ง"
+      },
+      {
+        "word": "下手",
+        "reading": "へた",
+        "meaning": "ไม่เก่ง"
+      },
+      {
+        "word": "大切",
+        "reading": "たいせつ",
+        "meaning": "สำคัญ"
+      },
+      {
+        "word": "簡単",
+        "reading": "かんたん",
+        "meaning": "ง่าย"
+      },
+      {
+        "word": "難しい",
+        "reading": "むずかしい",
+        "meaning": "ยาก"
+      },
+      {
+        "word": "強い",
+        "reading": "つよい",
+        "meaning": "แข็งแรง, แรง"
+      },
+      {
+        "word": "弱い",
+        "reading": "よわい",
+        "meaning": "อ่อนแอ"
+      },
+      {
+        "word": "多い",
+        "reading": "おおい",
+        "meaning": "มาก"
+      },
+      {
+        "word": "少ない",
+        "reading": "すくない",
+        "meaning": "น้อย"
+      },
+      {
+        "word": "痛い",
+        "reading": "いたい",
+        "meaning": "เจ็บ, ปวด"
+      },
+      {
+        "word": "危ない",
+        "reading": "あぶない",
+        "meaning": "อันตราย"
+      },
+      {
+        "word": "大丈夫",
+        "reading": "だいじょうぶ",
+        "meaning": "ไม่เป็นไร"
+      },
+      {
+        "word": "同じ",
+        "reading": "おなじ",
+        "meaning": "เหมือนกัน"
+      },
+      {
+        "word": "違う",
+        "reading": "ちがう",
+        "meaning": "ต่าง, ไม่เหมือน"
+      },
+      {
+        "word": "遠い",
+        "reading": "とおい",
+        "meaning": "ไกล"
+      },
+      {
+        "word": "近い",
+        "reading": "ちかい",
+        "meaning": "ใกล้"
+      },
+      {
+        "word": "うるさい",
+        "reading": "うるさい",
+        "meaning": "เสียงดัง, น่ารำคาญ"
+      },
+      {
+        "word": "優しい",
+        "reading": "やさしい",
+        "meaning": "ใจดี, อ่อนโยน"
+      }
+    ]
   },
   {
-    "kanji": "飲む",
-    "kana": "のむ",
-    "romaji": "nomu",
-    "thai": "ดื่ม",
-    "english": "to drink",
-    "pos": "กริยา",
-    "example": {
-      "ja": "水を飲んでください。",
-      "kana": "みずをのんでください。",
-      "thai": "กรุณาดื่มน้ำ"
-    }
+    "set": 5,
+    "title": "เวลา, วัน, เดือน, ตัวเลข, และการบอกเวลา",
+    "_comment": "เป็นคำที่ออกบ่อยมากในการสอบและในชีวิตประจำวัน เช่น “วันนี้”, “พรุ่งนี้”, “เมื่อวาน”, “สัปดาห์”, “เดือน”, “ปี”, “โมง”, “นาที”",
+    "words": [
+      {
+        "word": "今日",
+        "reading": "きょう",
+        "meaning": "วันนี้"
+      },
+      {
+        "word": "明日",
+        "reading": "あした",
+        "meaning": "พรุ่งนี้"
+      },
+      {
+        "word": "昨日",
+        "reading": "きのう",
+        "meaning": "เมื่อวาน"
+      },
+      {
+        "word": "今",
+        "reading": "いま",
+        "meaning": "ตอนนี้"
+      },
+      {
+        "word": "毎日",
+        "reading": "まいにち",
+        "meaning": "ทุกวัน"
+      },
+      {
+        "word": "毎週",
+        "reading": "まいしゅう",
+        "meaning": "ทุกสัปดาห์"
+      },
+      {
+        "word": "毎月",
+        "reading": "まいつき",
+        "meaning": "ทุกเดือน"
+      },
+      {
+        "word": "毎年",
+        "reading": "まいとし",
+        "meaning": "ทุกปี"
+      },
+      {
+        "word": "週",
+        "reading": "しゅう",
+        "meaning": "สัปดาห์"
+      },
+      {
+        "word": "月",
+        "reading": "つき",
+        "meaning": "เดือน"
+      },
+      {
+        "word": "年",
+        "reading": "とし",
+        "meaning": "ปี"
+      },
+      {
+        "word": "時",
+        "reading": "じ",
+        "meaning": "โมง, ชั่วโมง"
+      },
+      {
+        "word": "分",
+        "reading": "ふん",
+        "meaning": "นาที"
+      },
+      {
+        "word": "秒",
+        "reading": "びょう",
+        "meaning": "วินาที"
+      },
+      {
+        "word": "午前",
+        "reading": "ごぜん",
+        "meaning": "ช่วงเช้า (ก่อนเที่ยง)"
+      },
+      {
+        "word": "午後",
+        "reading": "ごご",
+        "meaning": "ช่วงบ่าย (หลังเที่ยง)"
+      },
+      {
+        "word": "朝",
+        "reading": "あさ",
+        "meaning": "เช้า"
+      },
+      {
+        "word": "昼",
+        "reading": "ひる",
+        "meaning": "เที่ยงวัน"
+      },
+      {
+        "word": "夕方",
+        "reading": "ゆうがた",
+        "meaning": "เย็น"
+      },
+      {
+        "word": "夜",
+        "reading": "よる",
+        "meaning": "กลางคืน"
+      },
+      {
+        "word": "今朝",
+        "reading": "けさ",
+        "meaning": "เช้าวันนี้"
+      },
+      {
+        "word": "今晩",
+        "reading": "こんばん",
+        "meaning": "คืนนี้"
+      },
+      {
+        "word": "先週",
+        "reading": "せんしゅう",
+        "meaning": "สัปดาห์ที่แล้ว"
+      },
+      {
+        "word": "来週",
+        "reading": "らいしゅう",
+        "meaning": "สัปดาห์หน้า"
+      },
+      {
+        "word": "先月",
+        "reading": "せんげつ",
+        "meaning": "เดือนที่แล้ว"
+      },
+      {
+        "word": "来月",
+        "reading": "らいげつ",
+        "meaning": "เดือนหน้า"
+      },
+      {
+        "word": "去年",
+        "reading": "きょねん",
+        "meaning": "ปีที่แล้ว"
+      },
+      {
+        "word": "来年",
+        "reading": "らいねん",
+        "meaning": "ปีหน้า"
+      },
+      {
+        "word": "日曜日",
+        "reading": "にちようび",
+        "meaning": "วันอาทิตย์"
+      },
+      {
+        "word": "月曜日",
+        "reading": "げつようび",
+        "meaning": "วันจันทร์"
+      },
+      {
+        "word": "火曜日",
+        "reading": "かようび",
+        "meaning": "วันอังคาร"
+      },
+      {
+        "word": "水曜日",
+        "reading": "すいようび",
+        "meaning": "วันพุธ"
+      },
+      {
+        "word": "木曜日",
+        "reading": "もくようび",
+        "meaning": "วันพฤหัสบดี"
+      },
+      {
+        "word": "金曜日",
+        "reading": "きんようび",
+        "meaning": "วันศุกร์"
+      },
+      {
+        "word": "土曜日",
+        "reading": "どようび",
+        "meaning": "วันเสาร์"
+      },
+      {
+        "word": "春",
+        "reading": "はる",
+        "meaning": "ฤดูใบไม้ผลิ"
+      },
+      {
+        "word": "夏",
+        "reading": "なつ",
+        "meaning": "ฤดูร้อน"
+      },
+      {
+        "word": "秋",
+        "reading": "あき",
+        "meaning": "ฤดูใบไม้ร่วง"
+      },
+      {
+        "word": "冬",
+        "reading": "ふゆ",
+        "meaning": "ฤดูหนาว"
+      },
+      {
+        "word": "一日",
+        "reading": "いちにち",
+        "meaning": "หนึ่งวัน"
+      },
+      {
+        "word": "一週間",
+        "reading": "いっしゅうかん",
+        "meaning": "หนึ่งสัปดาห์"
+      },
+      {
+        "word": "一月",
+        "reading": "いちがつ",
+        "meaning": "เดือนมกราคม"
+      },
+      {
+        "word": "二月",
+        "reading": "にがつ",
+        "meaning": "เดือนกุมภาพันธ์"
+      },
+      {
+        "word": "三月",
+        "reading": "さんがつ",
+        "meaning": "เดือนมีนาคม"
+      },
+      {
+        "word": "四月",
+        "reading": "しがつ",
+        "meaning": "เดือนเมษายน"
+      },
+      {
+        "word": "五月",
+        "reading": "ごがつ",
+        "meaning": "เดือนพฤษภาคม"
+      },
+      {
+        "word": "六月",
+        "reading": "ろくがつ",
+        "meaning": "เดือนมิถุนายน"
+      },
+      {
+        "word": "七月",
+        "reading": "しちがつ",
+        "meaning": "เดือนกรกฎาคม"
+      },
+      {
+        "word": "八月",
+        "reading": "はちがつ",
+        "meaning": "เดือนสิงหาคม"
+      },
+      {
+        "word": "九月",
+        "reading": "くがつ",
+        "meaning": "เดือนกันยายน"
+      },
+      {
+        "word": "十月",
+        "reading": "じゅうがつ",
+        "meaning": "เดือนตุลาคม"
+      }
+    ]
   },
   {
-    "kanji": "新しい",
-    "kana": "あたらしい",
-    "romaji": "atarashii",
-    "thai": "ใหม่",
-    "english": "new",
-    "pos": "คุณศัพท์",
-    "example": {
-      "ja": "新しい靴を買いました。",
-      "kana": "あたらしいくつをかいました。",
-      "thai": "ซื้อรองเท้าใหม่"
-    }
+    "set": 6,
+    "title": "การเคลื่อนไหว, ทิศทาง, ตำแหน่ง, สถานที่, การมี/อยู่",
+    "_comment": "คำพื้นฐานในประโยค",
+    "words": [
+      {
+        "word": "行く",
+        "reading": "いく",
+        "meaning": "ไป"
+      },
+      {
+        "word": "来る",
+        "reading": "くる",
+        "meaning": "มา"
+      },
+      {
+        "word": "帰る",
+        "reading": "かえる",
+        "meaning": "กลับ"
+      },
+      {
+        "word": "入る",
+        "reading": "はいる",
+        "meaning": "เข้า"
+      },
+      {
+        "word": "出る",
+        "reading": "でる",
+        "meaning": "ออก"
+      },
+      {
+        "word": "出かける",
+        "reading": "でかける",
+        "meaning": "ออกไปข้างนอก"
+      },
+      {
+        "word": "登る",
+        "reading": "のぼる",
+        "meaning": "ปีน"
+      },
+      {
+        "word": "渡る",
+        "reading": "わたる",
+        "meaning": "ข้าม (สะพาน ถนน)"
+      },
+      {
+        "word": "止まる",
+        "reading": "とまる",
+        "meaning": "หยุด, พัก (โรงแรม)"
+      },
+      {
+        "word": "曲がる",
+        "reading": "まがる",
+        "meaning": "เลี้ยว"
+      },
+      {
+        "word": "走る",
+        "reading": "はしる",
+        "meaning": "วิ่ง"
+      },
+      {
+        "word": "歩く",
+        "reading": "あるく",
+        "meaning": "เดิน"
+      },
+      {
+        "word": "飛ぶ",
+        "reading": "とぶ",
+        "meaning": "บิน, กระโดด"
+      },
+      {
+        "word": "泳ぐ",
+        "reading": "およぐ",
+        "meaning": "ว่ายน้ำ"
+      },
+      {
+        "word": "乗る",
+        "reading": "のる",
+        "meaning": "ขึ้น (ยานพาหนะ)"
+      },
+      {
+        "word": "降りる",
+        "reading": "おりる",
+        "meaning": "ลง (ยานพาหนะ)"
+      },
+      {
+        "word": "ある",
+        "reading": "ある",
+        "meaning": "มี, อยู่ (สิ่งไม่มีชีวิต)"
+      },
+      {
+        "word": "いる",
+        "reading": "いる",
+        "meaning": "มี, อยู่ (สิ่งมีชีวิต)"
+      },
+      {
+        "word": "上",
+        "reading": "うえ",
+        "meaning": "ข้างบน"
+      },
+      {
+        "word": "下",
+        "reading": "した",
+        "meaning": "ข้างล่าง"
+      },
+      {
+        "word": "中",
+        "reading": "なか",
+        "meaning": "ข้างใน"
+      },
+      {
+        "word": "外",
+        "reading": "そと",
+        "meaning": "ข้างนอก"
+      },
+      {
+        "word": "前",
+        "reading": "まえ",
+        "meaning": "ข้างหน้า"
+      },
+      {
+        "word": "後ろ",
+        "reading": "うしろ",
+        "meaning": "ข้างหลัง"
+      },
+      {
+        "word": "右",
+        "reading": "みぎ",
+        "meaning": "ขวา"
+      },
+      {
+        "word": "左",
+        "reading": "ひだり",
+        "meaning": "ซ้าย"
+      },
+      {
+        "word": "近く",
+        "reading": "ちかく",
+        "meaning": "ใกล้ ๆ"
+      },
+      {
+        "word": "遠く",
+        "reading": "とおく",
+        "meaning": "ไกล ๆ"
+      },
+      {
+        "word": "隣",
+        "reading": "となり",
+        "meaning": "ข้าง ๆ, ถัดไป"
+      },
+      {
+        "word": "間",
+        "reading": "あいだ",
+        "meaning": "ระหว่าง"
+      },
+      {
+        "word": "上る",
+        "reading": "のぼる",
+        "meaning": "ขึ้น (เช่น บันได)"
+      },
+      {
+        "word": "降る",
+        "reading": "ふる",
+        "meaning": "ตก (ฝน หิมะ)"
+      },
+      {
+        "word": "置く",
+        "reading": "おく",
+        "meaning": "วาง"
+      },
+      {
+        "word": "開ける",
+        "reading": "あける",
+        "meaning": "เปิด (สิ่งของ)"
+      },
+      {
+        "word": "閉める",
+        "reading": "しめる",
+        "meaning": "ปิด (สิ่งของ)"
+      },
+      {
+        "word": "立つ",
+        "reading": "たつ",
+        "meaning": "ยืน"
+      },
+      {
+        "word": "座る",
+        "reading": "すわる",
+        "meaning": "นั่ง"
+      },
+      {
+        "word": "起きる",
+        "reading": "おきる",
+        "meaning": "ตื่น"
+      },
+      {
+        "word": "寝る",
+        "reading": "ねる",
+        "meaning": "นอน"
+      },
+      {
+        "word": "洗う",
+        "reading": "あらう",
+        "meaning": "ล้าง"
+      },
+      {
+        "word": "掃除する",
+        "reading": "そうじする",
+        "meaning": "ทำความสะอาด"
+      },
+      {
+        "word": "使う",
+        "reading": "つかう",
+        "meaning": "ใช้"
+      },
+      {
+        "word": "持つ",
+        "reading": "もつ",
+        "meaning": "ถือ, มี"
+      },
+      {
+        "word": "開く",
+        "reading": "あく",
+        "meaning": "เปิด (อัตโนมัติ)"
+      },
+      {
+        "word": "閉まる",
+        "reading": "しまる",
+        "meaning": "ปิด (อัตโนมัติ)"
+      },
+      {
+        "word": "消える",
+        "reading": "きえる",
+        "meaning": "ดับ, หายไป"
+      },
+      {
+        "word": "つく",
+        "reading": "つく",
+        "meaning": "ติด (ไฟ, เครื่องใช้ไฟฟ้า)"
+      },
+      {
+        "word": "始まる",
+        "reading": "はじまる",
+        "meaning": "เริ่มต้น (อัตโนมัติ)"
+      },
+      {
+        "word": "終わる",
+        "reading": "おわる",
+        "meaning": "จบ, สิ้นสุด"
+      },
+      {
+        "word": "覚える",
+        "reading": "おぼえる",
+        "meaning": "จำ"
+      },
+      {
+        "word": "忘れる",
+        "reading": "わすれる",
+        "meaning": "ลืม"
+      }
+    ]
   },
   {
-    "kanji": "古い",
-    "kana": "ふるい",
-    "romaji": "furui",
-    "thai": "เก่า",
-    "english": "old",
-    "pos": "คุณศัพท์",
-    "example": {
-      "ja": "古い本を読みました。",
-      "kana": "ふるいほんをよみました。",
-      "thai": "อ่านหนังสือเก่า"
-    }
+    "set": 7,
+    "title": "สถานที่ (場所), ตำแหน่ง (ところ), ",
+    "_comment": "สิ่งแวดล้อมรอบตัว",
+    "words": [
+      {
+        "word": "学校",
+        "reading": "がっこう",
+        "meaning": "โรงเรียน"
+      },
+      {
+        "word": "教室",
+        "reading": "きょうしつ",
+        "meaning": "ห้องเรียน"
+      },
+      {
+        "word": "会社",
+        "reading": "かいしゃ",
+        "meaning": "บริษัท"
+      },
+      {
+        "word": "店",
+        "reading": "みせ",
+        "meaning": "ร้านค้า"
+      },
+      {
+        "word": "図書館",
+        "reading": "としょかん",
+        "meaning": "ห้องสมุด"
+      },
+      {
+        "word": "病院",
+        "reading": "びょういん",
+        "meaning": "โรงพยาบาล"
+      },
+      {
+        "word": "駅",
+        "reading": "えき",
+        "meaning": "สถานีรถไฟ"
+      },
+      {
+        "word": "空港",
+        "reading": "くうこう",
+        "meaning": "สนามบิน"
+      },
+      {
+        "word": "郵便局",
+        "reading": "ゆうびんきょく",
+        "meaning": "ที่ทำการไปรษณีย์"
+      },
+      {
+        "word": "銀行",
+        "reading": "ぎんこう",
+        "meaning": "ธนาคาร"
+      },
+      {
+        "word": "ホテル",
+        "reading": "ほてる",
+        "meaning": "โรงแรม"
+      },
+      {
+        "word": "レストラン",
+        "reading": "れすとらん",
+        "meaning": "ร้านอาหาร"
+      },
+      {
+        "word": "喫茶店",
+        "reading": "きっさてん",
+        "meaning": "ร้านกาแฟ"
+      },
+      {
+        "word": "スーパー",
+        "reading": "すーぱー",
+        "meaning": "ซูเปอร์มาร์เก็ต"
+      },
+      {
+        "word": "デパート",
+        "reading": "でぱーと",
+        "meaning": "ห้างสรรพสินค้า"
+      },
+      {
+        "word": "映画館",
+        "reading": "えいがかん",
+        "meaning": "โรงภาพยนตร์"
+      },
+      {
+        "word": "公園",
+        "reading": "こうえん",
+        "meaning": "สวนสาธารณะ"
+      },
+      {
+        "word": "動物園",
+        "reading": "どうぶつえん",
+        "meaning": "สวนสัตว์"
+      },
+      {
+        "word": "神社",
+        "reading": "じんじゃ",
+        "meaning": "ศาลเจ้า"
+      },
+      {
+        "word": "寺",
+        "reading": "てら",
+        "meaning": "วัด"
+      },
+      {
+        "word": "教会",
+        "reading": "きょうかい",
+        "meaning": "โบสถ์"
+      },
+      {
+        "word": "家",
+        "reading": "いえ",
+        "meaning": "บ้าน"
+      },
+      {
+        "word": "部屋",
+        "reading": "へや",
+        "meaning": "ห้อง"
+      },
+      {
+        "word": "台所",
+        "reading": "だいどころ",
+        "meaning": "ห้องครัว"
+      },
+      {
+        "word": "風呂",
+        "reading": "ふろ",
+        "meaning": "อ่างอาบน้ำ"
+      },
+      {
+        "word": "庭",
+        "reading": "にわ",
+        "meaning": "สวน (ในบ้าน)"
+      },
+      {
+        "word": "玄関",
+        "reading": "げんかん",
+        "meaning": "ทางเข้า (บ้าน)"
+      },
+      {
+        "word": "窓",
+        "reading": "まど",
+        "meaning": "หน้าต่าง"
+      },
+      {
+        "word": "ドア",
+        "reading": "どあ",
+        "meaning": "ประตู"
+      },
+      {
+        "word": "橋",
+        "reading": "はし",
+        "meaning": "สะพาน"
+      },
+      {
+        "word": "建物",
+        "reading": "たてもの",
+        "meaning": "อาคาร"
+      },
+      {
+        "word": "部",
+        "reading": "ぶ",
+        "meaning": "แผนก, ชมรม"
+      },
+      {
+        "word": "会社員",
+        "reading": "かいしゃいん",
+        "meaning": "พนักงานบริษัท"
+      },
+      {
+        "word": "学生寮",
+        "reading": "がくせいりょう",
+        "meaning": "หอพักนักเรียน"
+      },
+      {
+        "word": "町",
+        "reading": "まち",
+        "meaning": "เมือง, เขต"
+      },
+      {
+        "word": "村",
+        "reading": "むら",
+        "meaning": "หมู่บ้าน"
+      },
+      {
+        "word": "道路",
+        "reading": "どうろ",
+        "meaning": "ถนน"
+      },
+      {
+        "word": "信号",
+        "reading": "しんごう",
+        "meaning": "สัญญาณไฟจราจร"
+      },
+      {
+        "word": "角",
+        "reading": "かど",
+        "meaning": "มุม (ถนน)"
+      },
+      {
+        "word": "場所",
+        "reading": "ばしょ",
+        "meaning": "สถานที่"
+      },
+      {
+        "word": "ところ",
+        "reading": "ところ",
+        "meaning": "ที่, แห่ง, จุด"
+      },
+      {
+        "word": "上",
+        "reading": "うえ",
+        "meaning": "ข้างบน"
+      },
+      {
+        "word": "下",
+        "reading": "した",
+        "meaning": "ข้างล่าง"
+      },
+      {
+        "word": "右",
+        "reading": "みぎ",
+        "meaning": "ขวา"
+      },
+      {
+        "word": "左",
+        "reading": "ひだり",
+        "meaning": "ซ้าย"
+      },
+      {
+        "word": "前",
+        "reading": "まえ",
+        "meaning": "ข้างหน้า"
+      },
+      {
+        "word": "後ろ",
+        "reading": "うしろ",
+        "meaning": "ข้างหลัง"
+      },
+      {
+        "word": "中",
+        "reading": "なか",
+        "meaning": "ข้างใน"
+      },
+      {
+        "word": "外",
+        "reading": "そと",
+        "meaning": "ข้างนอก"
+      },
+      {
+        "word": "近く",
+        "reading": "ちかく",
+        "meaning": "ใกล้ ๆ"
+      },
+      {
+        "word": "遠く",
+        "reading": "とおく",
+        "meaning": "ไกล ๆ"
+      }
+    ]
   },
   {
-    "kanji": "午前",
-    "kana": "ごぜん",
-    "romaji": "gozen",
-    "thai": "ตอนเช้า",
-    "english": "morning",
-    "pos": "คำนาม",
-    "example": {
-      "ja": "午前九時に会いましょう。",
-      "kana": "ごぜんくじにあいましょう。",
-      "thai": "เจอกันตอนเก้าโมงเช้า"
-    }
+    "set": 8,
+    "title": "ตัวเลข, การนับ, หน่วย, เงิน",
+    "_comment": "ปริมาณพื้นฐาน",
+    "words": [
+      {
+        "word": "一",
+        "reading": "いち",
+        "meaning": "หนึ่ง"
+      },
+      {
+        "word": "二",
+        "reading": "に",
+        "meaning": "สอง"
+      },
+      {
+        "word": "三",
+        "reading": "さん",
+        "meaning": "สาม"
+      },
+      {
+        "word": "四",
+        "reading": "よん",
+        "meaning": "สี่"
+      },
+      {
+        "word": "五",
+        "reading": "ご",
+        "meaning": "ห้า"
+      },
+      {
+        "word": "六",
+        "reading": "ろく",
+        "meaning": "หก"
+      },
+      {
+        "word": "七",
+        "reading": "なな",
+        "meaning": "เจ็ด"
+      },
+      {
+        "word": "八",
+        "reading": "はち",
+        "meaning": "แปด"
+      },
+      {
+        "word": "九",
+        "reading": "きゅう",
+        "meaning": "เก้า"
+      },
+      {
+        "word": "十",
+        "reading": "じゅう",
+        "meaning": "สิบ"
+      },
+      {
+        "word": "百",
+        "reading": "ひゃく",
+        "meaning": "ร้อย"
+      },
+      {
+        "word": "千",
+        "reading": "せん",
+        "meaning": "พัน"
+      },
+      {
+        "word": "万",
+        "reading": "まん",
+        "meaning": "หมื่น"
+      },
+      {
+        "word": "円",
+        "reading": "えん",
+        "meaning": "เยน (สกุลเงิน)"
+      },
+      {
+        "word": "人",
+        "reading": "にん",
+        "meaning": "คน (หน่วยนับคน)"
+      },
+      {
+        "word": "一人",
+        "reading": "ひとり",
+        "meaning": "หนึ่งคน"
+      },
+      {
+        "word": "二人",
+        "reading": "ふたり",
+        "meaning": "สองคน"
+      },
+      {
+        "word": "三人",
+        "reading": "さんにん",
+        "meaning": "สามคน"
+      },
+      {
+        "word": "何人",
+        "reading": "なんにん",
+        "meaning": "กี่คน"
+      },
+      {
+        "word": "個",
+        "reading": "こ",
+        "meaning": "หน่วยนับสิ่งเล็ก ๆ"
+      },
+      {
+        "word": "本",
+        "reading": "ほん",
+        "meaning": "หน่วยนับของยาว เช่น ดินสอ ขวด"
+      },
+      {
+        "word": "枚",
+        "reading": "まい",
+        "meaning": "หน่วยนับของแบน เช่น กระดาษ, แผ่น"
+      },
+      {
+        "word": "冊",
+        "reading": "さつ",
+        "meaning": "หน่วยนับหนังสือ"
+      },
+      {
+        "word": "台",
+        "reading": "だい",
+        "meaning": "หน่วยนับเครื่องจักร รถ"
+      },
+      {
+        "word": "匹",
+        "reading": "ひき",
+        "meaning": "หน่วยนับสัตว์ตัวเล็ก"
+      },
+      {
+        "word": "歳",
+        "reading": "さい",
+        "meaning": "อายุ (ปี)"
+      },
+      {
+        "word": "時間",
+        "reading": "じかん",
+        "meaning": "ชั่วโมง (ระยะเวลา)"
+      },
+      {
+        "word": "分",
+        "reading": "ふん",
+        "meaning": "นาที"
+      },
+      {
+        "word": "秒",
+        "reading": "びょう",
+        "meaning": "วินาที"
+      },
+      {
+        "word": "日",
+        "reading": "にち",
+        "meaning": "วัน"
+      },
+      {
+        "word": "月",
+        "reading": "がつ",
+        "meaning": "เดือน (ชื่อเดือน)"
+      },
+      {
+        "word": "年",
+        "reading": "ねん",
+        "meaning": "ปี"
+      },
+      {
+        "word": "一日",
+        "reading": "ついたち",
+        "meaning": "วันที่ 1"
+      },
+      {
+        "word": "二日",
+        "reading": "ふつか",
+        "meaning": "วันที่ 2"
+      },
+      {
+        "word": "三日",
+        "reading": "みっか",
+        "meaning": "วันที่ 3"
+      },
+      {
+        "word": "四日",
+        "reading": "よっか",
+        "meaning": "วันที่ 4"
+      },
+      {
+        "word": "五日",
+        "reading": "いつか",
+        "meaning": "วันที่ 5"
+      },
+      {
+        "word": "六日",
+        "reading": "むいか",
+        "meaning": "วันที่ 6"
+      },
+      {
+        "word": "七日",
+        "reading": "なのか",
+        "meaning": "วันที่ 7"
+      },
+      {
+        "word": "八日",
+        "reading": "ようか",
+        "meaning": "วันที่ 8"
+      },
+      {
+        "word": "九日",
+        "reading": "ここのか",
+        "meaning": "วันที่ 9"
+      },
+      {
+        "word": "十日",
+        "reading": "とおか",
+        "meaning": "วันที่ 10"
+      },
+      {
+        "word": "何日",
+        "reading": "なんにち",
+        "meaning": "วันที่เท่าไหร่"
+      },
+      {
+        "word": "一つ",
+        "reading": "ひとつ",
+        "meaning": "หนึ่งอัน"
+      },
+      {
+        "word": "二つ",
+        "reading": "ふたつ",
+        "meaning": "สองอัน"
+      },
+      {
+        "word": "三つ",
+        "reading": "みっつ",
+        "meaning": "สามอัน"
+      },
+      {
+        "word": "四つ",
+        "reading": "よっつ",
+        "meaning": "สี่อัน"
+      },
+      {
+        "word": "五つ",
+        "reading": "いつつ",
+        "meaning": "ห้าอัน"
+      },
+      {
+        "word": "いくつ",
+        "reading": "いくつ",
+        "meaning": "กี่อัน"
+      },
+      {
+        "word": "半",
+        "reading": "はん",
+        "meaning": "ครึ่ง"
+      },
+      {
+        "word": "全部",
+        "reading": "ぜんぶ",
+        "meaning": "ทั้งหมด"
+      }
+    ]
   },
   {
-    "kanji": "毎日",
-    "kana": "まいにち",
-    "romaji": "mainichi",
-    "thai": "ทุกวัน",
-    "english": "every day",
-    "pos": "คำวิเศษณ์",
-    "example": {
-      "ja": "毎日日本語を勉強します。",
-      "kana": "まいにちにほんごをべんきょうします。",
-      "thai": "เรียนภาษาญี่ปุ่นทุกวัน"
-    }
+    "set": 9,
+    "title": "สรรพนาม (代名詞), คำชี้ (指示語)",
+    "_comment": "คำถามพื้นฐาน (疑問詞)",
+    "words": [
+      {
+        "word": "これ",
+        "reading": "これ",
+        "meaning": "นี่ (สิ่งนี้ ใกล้ผู้พูด)"
+      },
+      {
+        "word": "それ",
+        "reading": "それ",
+        "meaning": "นั่น (ใกล้ผู้ฟัง)"
+      },
+      {
+        "word": "あれ",
+        "reading": "あれ",
+        "meaning": "โน่น (ไกลทั้งผู้พูดและผู้ฟัง)"
+      },
+      {
+        "word": "どれ",
+        "reading": "どれ",
+        "meaning": "อันไหน"
+      },
+      {
+        "word": "この",
+        "reading": "この",
+        "meaning": "นี้ (ใช้ขยายคำนาม)"
+      },
+      {
+        "word": "その",
+        "reading": "その",
+        "meaning": "นั้น (ใช้ขยายคำนาม)"
+      },
+      {
+        "word": "あの",
+        "reading": "あの",
+        "meaning": "โน้น (ใช้ขยายคำนาม)"
+      },
+      {
+        "word": "どの",
+        "reading": "どの",
+        "meaning": "อันไหน (ใช้ขยายคำนาม)"
+      },
+      {
+        "word": "ここ",
+        "reading": "ここ",
+        "meaning": "ที่นี่"
+      },
+      {
+        "word": "そこ",
+        "reading": "そこ",
+        "meaning": "ที่นั่น"
+      },
+      {
+        "word": "あそこ",
+        "reading": "あそこ",
+        "meaning": "ที่โน่น"
+      },
+      {
+        "word": "どこ",
+        "reading": "どこ",
+        "meaning": "ที่ไหน"
+      },
+      {
+        "word": "こちら",
+        "reading": "こちら",
+        "meaning": "ทางนี้ / ฝ่ายนี้ (สุภาพ)"
+      },
+      {
+        "word": "そちら",
+        "reading": "そちら",
+        "meaning": "ทางนั้น / ฝ่ายนั้น (สุภาพ)"
+      },
+      {
+        "word": "あちら",
+        "reading": "あちら",
+        "meaning": "ทางโน้น / ฝ่ายโน้น (สุภาพ)"
+      },
+      {
+        "word": "どちら",
+        "reading": "どちら",
+        "meaning": "ทางไหน / ฝ่ายไหน (สุภาพ)"
+      },
+      {
+        "word": "私",
+        "reading": "わたし",
+        "meaning": "ฉัน, ผม"
+      },
+      {
+        "word": "あなた",
+        "reading": "あなた",
+        "meaning": "คุณ"
+      },
+      {
+        "word": "彼",
+        "reading": "かれ",
+        "meaning": "เขา (ผู้ชาย)"
+      },
+      {
+        "word": "彼女",
+        "reading": "かのじょ",
+        "meaning": "เธอ (ผู้หญิง)"
+      },
+      {
+        "word": "皆さん",
+        "reading": "みなさん",
+        "meaning": "ทุกคน"
+      },
+      {
+        "word": "誰",
+        "reading": "だれ",
+        "meaning": "ใคร"
+      },
+      {
+        "word": "何",
+        "reading": "なに",
+        "meaning": "อะไร"
+      },
+      {
+        "word": "どんな",
+        "reading": "どんな",
+        "meaning": "แบบไหน"
+      },
+      {
+        "word": "どう",
+        "reading": "どう",
+        "meaning": "อย่างไร"
+      },
+      {
+        "word": "どうして",
+        "reading": "どうして",
+        "meaning": "ทำไม"
+      },
+      {
+        "word": "なぜ",
+        "reading": "なぜ",
+        "meaning": "เพราะเหตุใด (ทางการกว่า どうして)"
+      },
+      {
+        "word": "いつ",
+        "reading": "いつ",
+        "meaning": "เมื่อไหร่"
+      },
+      {
+        "word": "いくら",
+        "reading": "いくら",
+        "meaning": "ราคาเท่าไหร่"
+      },
+      {
+        "word": "いくつ",
+        "reading": "いくつ",
+        "meaning": "กี่อัน, กี่ชิ้น"
+      },
+      {
+        "word": "どのくらい",
+        "reading": "どのくらい",
+        "meaning": "ประมาณเท่าไหร่"
+      },
+      {
+        "word": "自分",
+        "reading": "じぶん",
+        "meaning": "ตัวเอง"
+      },
+      {
+        "word": "誰か",
+        "reading": "だれか",
+        "meaning": "ใครบางคน"
+      },
+      {
+        "word": "何か",
+        "reading": "なにか",
+        "meaning": "บางสิ่ง"
+      },
+      {
+        "word": "どこか",
+        "reading": "どこか",
+        "meaning": "ที่ไหนสักแห่ง"
+      },
+      {
+        "word": "何でも",
+        "reading": "なんでも",
+        "meaning": "อะไรก็ได้"
+      },
+      {
+        "word": "どれでも",
+        "reading": "どれでも",
+        "meaning": "อันไหนก็ได้"
+      },
+      {
+        "word": "これから",
+        "reading": "これから",
+        "meaning": "จากนี้ไป"
+      },
+      {
+        "word": "それから",
+        "reading": "それから",
+        "meaning": "หลังจากนั้น"
+      },
+      {
+        "word": "あまり",
+        "reading": "あまり",
+        "meaning": "ไม่ค่อย (ใช้กับปฏิเสธ)"
+      },
+      {
+        "word": "たくさん",
+        "reading": "たくさん",
+        "meaning": "มากมาย"
+      },
+      {
+        "word": "少し",
+        "reading": "すこし",
+        "meaning": "นิดหน่อย"
+      },
+      {
+        "word": "とても",
+        "reading": "とても",
+        "meaning": "มาก"
+      },
+      {
+        "word": "全部",
+        "reading": "ぜんぶ",
+        "meaning": "ทั้งหมด"
+      },
+      {
+        "word": "一緒に",
+        "reading": "いっしょに",
+        "meaning": "ด้วยกัน"
+      },
+      {
+        "word": "もう",
+        "reading": "もう",
+        "meaning": "แล้ว / อีก (ขึ้นอยู่กับบริบท)"
+      },
+      {
+        "word": "まだ",
+        "reading": "まだ",
+        "meaning": "ยัง / ยังไม่"
+      },
+      {
+        "word": "よく",
+        "reading": "よく",
+        "meaning": "บ่อย / ดี"
+      },
+      {
+        "word": "時々",
+        "reading": "ときどき",
+        "meaning": "บางครั้ง"
+      },
+      {
+        "word": "いつも",
+        "reading": "いつも",
+        "meaning": "เสมอ / เป็นประจำ"
+      }
+    ]
   },
   {
-    "kanji": "書く",
-    "kana": "かく",
-    "romaji": "kaku",
-    "thai": "เขียน",
-    "english": "to write",
-    "pos": "กริยา",
-    "example": {
-      "ja": "手紙を書いています。",
-      "kana": "てがみをかいています。",
-      "thai": "กำลังเขียนจดหมาย"
-    }
-  },
-  {
-    "kanji": "聞く",
-    "kana": "きく",
-    "romaji": "kiku",
-    "thai": "ฟัง",
-    "english": "to listen",
-    "pos": "กริยา",
-    "example": {
-      "ja": "音楽を聞きます。",
-      "kana": "おんがくをききます。",
-      "thai": "ฟังเพลง"
-    }
-  },
-  {
-    "kanji": "静か",
-    "kana": "しずか",
-    "romaji": "shizuka",
-    "thai": "เงียบ",
-    "english": "quiet",
-    "pos": "な形容詞",
-    "example": {
-      "ja": "図書館はとても静かです。",
-      "kana": "としょかんはとてもしずかです。",
-      "thai": "ห้องสมุดเงียบมาก"
-    }
+    "set": 10,
+    "title": "",
+    "_comment": "",
+    "words": [
+      {
+        "word": "はい",
+        "reading": "はい",
+        "meaning": "ใช่"
+      },
+      {
+        "word": "いいえ",
+        "reading": "いいえ",
+        "meaning": "ไม่ใช่"
+      },
+      {
+        "word": "おはよう",
+        "reading": "おはよう",
+        "meaning": "สวัสดีตอนเช้า"
+      },
+      {
+        "word": "こんにちは",
+        "reading": "こんにちは",
+        "meaning": "สวัสดี (ตอนกลางวัน)"
+      },
+      {
+        "word": "こんばんは",
+        "reading": "こんばんは",
+        "meaning": "สวัสดีตอนเย็น"
+      },
+      {
+        "word": "おやすみなさい",
+        "reading": "おやすみなさい",
+        "meaning": "ราตรีสวัสดิ์"
+      },
+      {
+        "word": "ありがとう",
+        "reading": "ありがとう",
+        "meaning": "ขอบคุณ"
+      },
+      {
+        "word": "どうもありがとう",
+        "reading": "どうもありがとう",
+        "meaning": "ขอบคุณมาก"
+      },
+      {
+        "word": "すみません",
+        "reading": "すみません",
+        "meaning": "ขอโทษ / ขอบคุณ (สุภาพ)"
+      },
+      {
+        "word": "ごめんなさい",
+        "reading": "ごめんなさい",
+        "meaning": "ขอโทษ (ไม่เป็นทางการ)"
+      },
+      {
+        "word": "お願いします",
+        "reading": "おねがいします",
+        "meaning": "กรุณาด้วย / ขอร้องด้วยครับ/ค่ะ"
+      },
+      {
+        "word": "どうぞ",
+        "reading": "どうぞ",
+        "meaning": "เชิญ / ได้โปรด"
+      },
+      {
+        "word": "どういたしまして",
+        "reading": "どういたしまして",
+        "meaning": "ไม่เป็นไร (ตอบเมื่อมีคนขอบคุณ)"
+      },
+      {
+        "word": "初めまして",
+        "reading": "はじめまして",
+        "meaning": "ยินดีที่ได้รู้จัก"
+      },
+      {
+        "word": "さようなら",
+        "reading": "さようなら",
+        "meaning": "ลาก่อน"
+      },
+      {
+        "word": "またね",
+        "reading": "またね",
+        "meaning": "ไว้เจอกันใหม่"
+      },
+      {
+        "word": "いらっしゃいませ",
+        "reading": "いらっしゃいませ",
+        "meaning": "ยินดีต้อนรับ (ใช้ในร้านค้า)"
+      },
+      {
+        "word": "お元気ですか",
+        "reading": "おげんきですか",
+        "meaning": "สบายดีไหมครับ/คะ"
+      },
+      {
+        "word": "はい、元気です",
+        "reading": "はい、げんきです",
+        "meaning": "ครับ/ค่ะ สบายดี"
+      },
+      {
+        "word": "おめでとうございます",
+        "reading": "おめでとうございます",
+        "meaning": "ขอแสดงความยินดี"
+      },
+      {
+        "word": "もしもし",
+        "reading": "もしもし",
+        "meaning": "สวัสดี (ใช้เวลาโทรศัพท์)"
+      },
+      {
+        "word": "どうして",
+        "reading": "どうして",
+        "meaning": "ทำไม"
+      },
+      {
+        "word": "たぶん",
+        "reading": "たぶん",
+        "meaning": "อาจจะ"
+      },
+      {
+        "word": "きっと",
+        "reading": "きっと",
+        "meaning": "แน่นอน, คงจะ"
+      },
+      {
+        "word": "とても",
+        "reading": "とても",
+        "meaning": "มาก"
+      },
+      {
+        "word": "少し",
+        "reading": "すこし",
+        "meaning": "นิดหน่อย"
+      },
+      {
+        "word": "もう",
+        "reading": "もう",
+        "meaning": "แล้ว / อีก"
+      },
+      {
+        "word": "まだ",
+        "reading": "まだ",
+        "meaning": "ยัง / ยังไม่"
+      },
+      {
+        "word": "すぐ",
+        "reading": "すぐ",
+        "meaning": "ทันที, เดี๋ยวนี้"
+      },
+      {
+        "word": "ゆっくり",
+        "reading": "ゆっくり",
+        "meaning": "ช้า ๆ, สบาย ๆ"
+      },
+      {
+        "word": "よく",
+        "reading": "よく",
+        "meaning": "บ่อย, ดี"
+      },
+      {
+        "word": "たくさん",
+        "reading": "たくさん",
+        "meaning": "มากมาย"
+      },
+      {
+        "word": "いつも",
+        "reading": "いつも",
+        "meaning": "เสมอ, เป็นประจำ"
+      },
+      {
+        "word": "時々",
+        "reading": "ときどき",
+        "meaning": "บางครั้ง"
+      },
+      {
+        "word": "全然",
+        "reading": "ぜんぜん",
+        "meaning": "ไม่เลย (ใช้กับประโยคปฏิเสธ)"
+      },
+      {
+        "word": "だから",
+        "reading": "だから",
+        "meaning": "เพราะฉะนั้น"
+      },
+      {
+        "word": "でも",
+        "reading": "でも",
+        "meaning": "แต่"
+      },
+      {
+        "word": "そして",
+        "reading": "そして",
+        "meaning": "และ, แล้วก็"
+      },
+      {
+        "word": "また",
+        "reading": "また",
+        "meaning": "อีกครั้ง"
+      },
+      {
+        "word": "それで",
+        "reading": "それで",
+        "meaning": "ดังนั้น, แล้วก็เลย"
+      },
+      {
+        "word": "から",
+        "reading": "から",
+        "meaning": "เพราะ..."
+      },
+      {
+        "word": "けど",
+        "reading": "けど",
+        "meaning": "แต่ (ไม่เป็นทางการ)"
+      },
+      {
+        "word": "が",
+        "reading": "が",
+        "meaning": "แต่ / แสดงประธาน"
+      },
+      {
+        "word": "を",
+        "reading": "を",
+        "meaning": "คำช่วยแสดงกรรม"
+      },
+      {
+        "word": "に",
+        "reading": "に",
+        "meaning": "คำช่วยแสดงเวลา / จุดหมาย"
+      },
+      {
+        "word": "で",
+        "reading": "で",
+        "meaning": "คำช่วยแสดงสถานที่ / วิธี"
+      },
+      {
+        "word": "へ",
+        "reading": "へ",
+        "meaning": "คำช่วยแสดงทิศทาง (ไปสู่...)"
+      },
+      {
+        "word": "と",
+        "reading": "と",
+        "meaning": "กับ / และ (เชื่อมคำนาม)"
+      },
+      {
+        "word": "や",
+        "reading": "や",
+        "meaning": "และ...เช่น..."
+      },
+      {
+        "word": "も",
+        "reading": "も",
+        "meaning": "ก็ / ด้วย"
+      },
+      {
+        "word": "の",
+        "reading": "の",
+        "meaning": "ของ (แสดงความเป็นเจ้าของ)"
+      },
+      {
+        "word": "は",
+        "reading": "は",
+        "meaning": "คำช่วยแสดงหัวเรื่อง"
+      }
+    ]
   }
 ]
